@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volkswagen AG Robot Bin-Picking System | Pramod Ramakrishna</title>
+  
+  <meta name="description" content="Vision-guided industrial 6-axis robotic bin-picking system developed for Volkswagen AG automotive assembly lines by Pramod Ramakrishna at OVGU Magdeburg.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <!-- Sticky Top Navigation Bar -->
+  <nav class="page-header-nav">
+    <div class="container page-header-inner">
+      <a href="../index.html#portfolio" class="back-to-paddock-link">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        <span>Return to Paddock // Home</span>
+      </a>
+
+      <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">
+        PROJECT_REF: <span style="color: var(--telemetry-cyan); font-weight: 700;">VW-ROBOT-PICK-2023</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Detail Hero Header -->
+  <header class="detail-hero-section">
+    <div class="container">
+      <span class="detail-header-badge" style="color: var(--telemetry-cyan);">// INDUSTRIAL ROBOTICS & AUTOMATION // VOLKSWAGEN AG</span>
+      <h1 class="detail-main-title">Volkswagen AG Robot Bin-Picking System</h1>
+      <p class="detail-lead-summary">
+        Autonomous vision-guided 6-axis robotic cell designed and implemented to solve the complex "random bin-picking" bottleneck in active automotive manufacturing, enabling automated handling of untangled metallic automotive components with real-time collision avoidance.
+      </p>
+    </div>
+  </header>
+
+  <!-- Technical Spec Sheet Panel -->
+  <main class="container">
+    <section class="spec-sheet-panel" style="border-top-color: var(--telemetry-cyan);">
+      <div class="spec-sheet-title" style="color: var(--telemetry-cyan);">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+        <span>Robotics & Vision Automation Specifications</span>
+      </div>
+
+      <table class="spec-sheet-table">
+        <tbody>
+          <tr>
+            <th>Industry Deployment Partner</th>
+            <td>Volkswagen AG (Automotive Vehicle Production Line)</td>
+          </tr>
+          <tr>
+            <th>Academic Host</th>
+            <td>Otto-von-Guericke-Universität Magdeburg — Department of Factory Operations and Automation</td>
+          </tr>
+          <tr>
+            <th>Manipulator Kinematics</th>
+            <td>6-Degree-of-Freedom (6-DOF) Industrial Articulated Robotic Arm</td>
+          </tr>
+          <tr>
+            <th>Perception & 3D Sensing</th>
+            <td>Overhead 3D Structured Light Scanner generating dense point clouds of disordered bin contents</td>
+          </tr>
+          <tr>
+            <th>Computer Vision & Matching</th>
+            <td>Point Cloud Library (PCL), CAD Model Surface Matching, ICP (Iterative Closest Point) 6D Pose Estimation</td>
+          </tr>
+          <tr>
+            <th>Motion & Collision Avoidance</th>
+            <td>Inverse Kinematics with dynamic bounding volume trajectory planning avoiding bin rim collisions</td>
+          </tr>
+          <tr>
+            <th>End-Effector Mechanism</th>
+            <td>Pneumatic dual-finger adaptive gripper with compliance sensors and magnetic assist</td>
+          </tr>
+          <tr>
+            <th>Cycle Time & Reliability</th>
+            <td>&lt; 4.8 seconds per pick, place, and re-orient sequence with &gt; 98.4% grasp success rate</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Visual Media Grid -->
+    <div class="section-hud-header">
+      <span class="hud-tag">System Visuals</span>
+      <h2 class="section-hud-title">Robotic Cell & Kinematic Verification</h2>
+    </div>
+
+    <div class="detail-media-grid">
+      <div class="detail-media-item">
+        <img src="../assets/images/project-robot-station.jpg" alt="Robotic Workcell at University Lab">
+        <div class="detail-media-caption">
+          <span>Active Testcell // 6-Axis Robotic Manipulator & Bin</span>
+        </div>
+      </div>
+      <div class="detail-media-item">
+        <img src="../assets/images/project-manufacturing-cell.jpg" alt="Manufacturing Cell Integration">
+        <div class="detail-media-caption">
+          <span>Production Line Integration // Volkswagen AG Standards</span>
+        </div>
+      </div>
+      <div class="detail-media-item">
+        <img src="../assets/images/project-simulation.png" alt="Kinematic Trajectory Simulation">
+        <div class="detail-media-caption">
+          <span>Digital Simulation // Trajectory & Collision Clearance</span>
+        </div>
+      </div>
+      <div class="detail-media-item">
+        <img src="../assets/images/project-robotics-1.png" alt="Point Cloud 3D Segmentation">
+        <div class="detail-media-caption">
+          <span>Perception Pipeline // 3D Point Cloud Segmentation</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Engineering Narrative -->
+    <section class="engineering-deepdive-grid">
+      <div class="deepdive-content">
+        <h3>1. The Automotive Bin-Picking Challenge</h3>
+        <p>
+          In automotive production lines, incoming stamped parts, brackets, and forgings arrive randomly tangled inside deep wire mesh or metal bins. Traditional mechanical vibratory bowl feeders cannot accommodate varied geometries or sensitive surface finishes. The goal was to deploy a flexible, autonomous robotic vision station that could dynamically identify and extract components without human intervention.
+        </p>
+
+        <h3>2. 3D Point Cloud Perception & CAD Pose Estimation</h3>
+        <p>
+          An overhead structured-light camera system captures high-resolution 3D point clouds of the container. Raw point clouds are filtered for noise, segmented using Euclidean clustering, and matched against the component's CAD surface model via normal-aligned ICP algorithms. The system computes the precise 6-DOF Cartesian pose (X, Y, Z, Roll, Pitch, Yaw) for candidate parts with highest accessibility and zero entanglements.
+        </p>
+
+        <h3>3. Trajectory Generation & Collision-Free Grasping</h3>
+        <p>
+          Using real-time inverse kinematics, the motion planner calculates an optimal approach vector, gripper orientation, and retreat path. Deep collision margins prevent the robot gripper or wrist axis from contacting the bin sidewalls or neighboring tangled parts.
+        </p>
+      </div>
+
+      <aside class="deepdive-sidebar-card">
+        <h4 style="font-family:var(--font-race); font-size:1.2rem; text-transform:uppercase; color:var(--telemetry-cyan); margin-bottom:14px;">Technology Stack</h4>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:10px; font-size:0.92rem; color:var(--text-secondary);">
+          <li style="display:flex; align-items:center; gap:8px;">
+            <span style="color:var(--telemetry-cyan); font-weight:700;">//</span> Python & C++
+          </li>
+          <li style="display:flex; align-items:center; gap:8px;">
+            <span style="color:var(--telemetry-cyan); font-weight:700;">//</span> ROS (Robot Operating System)
+          </li>
+          <li style="display:flex; align-items:center; gap:8px;">
+            <span style="color:var(--telemetry-cyan); font-weight:700;">//</span> Point Cloud Library (PCL)
+          </li>
+          <li style="display:flex; align-items:center; gap:8px;">
+            <span style="color:var(--telemetry-cyan); font-weight:700;">//</span> OpenCV & 3D Structured Light
+          </li>
+          <li style="display:flex; align-items:center; gap:8px;">
+            <span style="color:var(--telemetry-cyan); font-weight:700;">//</span> Industrial Kinematics Simulation
+          </li>
+          <li style="display:flex; align-items:center; gap:8px;">
+            <span style="color:var(--telemetry-cyan); font-weight:700;">//</span> Volkswagen AG Quality Protocols
+          </li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- Pagination -->
+    <div class="detail-pagination-bar">
+      <a href="baja-sae.html" class="page-nav-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        <span>Prev: BAJA SAE Racing</span>
+      </a>
+
+      <a href="idex-3dprinter.html" class="page-nav-btn" style="border-color:var(--telemetry-cyan); color:var(--telemetry-cyan);">
+        <span>Next: IDEX 3D Printer</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+      </a>
+    </div>
+  </main>
+
+  <footer style="padding:40px 0; border-top:1px solid var(--border-color); text-align:center; font-family:var(--font-mono); font-size:0.8rem; color:var(--text-muted);">
+    Pramod Ramakrishna // High-Octane Automotive & Systems Portfolio
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

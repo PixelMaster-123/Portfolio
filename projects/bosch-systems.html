@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robert Bosch GmbH: Industry 4.0 & Scrap Cost Systems | Pramod Ramakrishna</title>
+  
+  <meta name="description" content="Master's thesis and engineering project at Robert Bosch GmbH integrating SAP and MES data streams using Model-Based Systems Engineering (MBSE) by Pramod Ramakrishna.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <!-- Sticky Top Navigation Bar -->
+  <nav class="page-header-nav">
+    <div class="container page-header-inner">
+      <a href="../index.html#portfolio" class="back-to-paddock-link">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        <span>Return to Paddock // Home</span>
+      </a>
+
+      <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">
+        PROJECT_REF: <span style="color: var(--neon-green); font-weight: 700;">BOSCH-MBSE-2024</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Detail Hero Header -->
+  <header class="detail-hero-section">
+    <div class="container">
+      <span class="detail-header-badge" style="color: var(--neon-green);">// INDUSTRY 4.0 & MBSE // ROBERT BOSCH GMBH</span>
+      <h1 class="detail-main-title">SAP & MES Integration for Scrap Cost Detection</h1>
+      <p class="detail-lead-summary">
+        Master's thesis and production planning deployment at <strong>Robert Bosch GmbH</strong> developing a Model-Based Systems Engineering (MBSE) architecture that bridges enterprise ERP (SAP) with real-time Manufacturing Execution Systems (MES) to detect, isolate, and reduce manufacturing scrap costs.
+      </p>
+    </div>
+  </header>
+
+  <!-- Technical Spec Sheet Panel -->
+  <main class="container">
+    <section class="spec-sheet-panel" style="border-top-color: var(--neon-green);">
+      <div class="spec-sheet-title" style="color: var(--neon-green);">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+        <span>Systems Engineering & Architecture Specifications</span>
+      </div>
+
+      <table class="spec-sheet-table">
+        <tbody>
+          <tr>
+            <th>Host Organization</th>
+            <td>Robert Bosch GmbH — Department of Sample Production and Planning</td>
+          </tr>
+          <tr>
+            <th>Academic Institution</th>
+            <td>Otto-von-Guericke-Universität Magdeburg (M.Sc. Systems Engineering for Manufacturing)</td>
+          </tr>
+          <tr>
+            <th>Methodological Framework</th>
+            <td>Model-Based Systems Engineering (MBSE), SysML (Systems Modeling Language), AutomationML</td>
+          </tr>
+          <tr>
+            <th>Enterprise Systems</th>
+            <td>SAP ERP (Controlling CO, Production Planning PP, Materials Management MM modules)</td>
+          </tr>
+          <tr>
+            <th>Shopfloor Execution Systems</th>
+            <td>Manufacturing Execution System (MES), Automated Test Benches, Line PLC/SCADA telemetric logging</td>
+          </tr>
+          <tr>
+            <th>Interoperability & Data Pipelines</th>
+            <td>Asset Administration Shells (AAS), JSON Schema Standardization, RESTful telemetry connectors</td>
+          </tr>
+          <tr>
+            <th>Core Objective</th>
+            <td>Automated real-time root-cause tracing of workpiece defects to calculate instantaneous scrap cost attribution</td>
+          </tr>
+          <tr>
+            <th>Operational Impact</th>
+            <td>Eliminated asynchronous reporting lags, enabling sample planning engineers to mitigate recurring batch defects in active lines</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Visual Media Grid -->
+    <div class="section-hud-header">
+      <span class="hud-tag">Architecture Diagram</span>
+      <h2 class="section-hud-title">Data Pipeline & Systems Engineering Topology</h2>
+    </div>
+
+    <div class="detail-media-grid" style="grid-template-columns: 1fr;">
+      <div class="detail-media-item" style="aspect-ratio: 16 / 9; max-height: 520px;">
+        <img src="../assets/images/project-automation-diagram.png" alt="Automation Architecture Diagram">
+        <div class="detail-media-caption">
+          <span>SysML System Model // End-to-End SAP and MES Data Integration Topology</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Engineering Narrative -->
+    <section class="engineering-deepdive-grid">
+      <div class="deepdive-content">
+        <h3>1. The Industrial Data Silo Dilemma</h3>
+        <p>
+          In advanced automotive supplier operations such as Robert Bosch GmbH, sample production lines generate vast amounts of granular sensor and inspection data via shopfloor MES systems. However, financial controlling and scrap cost analysis traditionally resided in disconnected SAP enterprise databases. As a consequence, scrap cost attribution was calculated weeks after production runs, rendering preventive intervention impossible.
+        </p>
+
+        <h3>2. MBSE Modeling & SysML Architecture</h3>
+        <p>
+          Using Model-Based Systems Engineering (MBSE), I developed comprehensive SysML block definition diagrams (BDD), internal block diagrams (IBD), and state machine representations of the entire data pipeline. This ensured seamless semantic mapping between the mechanical workpiece lifecycle on the assembly line and the financial transaction records inside SAP CO.
+        </p>
+
+        <h3>3. Asset Administration Shell (AAS) Integration</h3>
+        <p>
+          By creating standardized digital twin wrappers based on the Asset Administration Shell (AAS) specification, each manufacturing station and component batch broadcasts standardized telemetry. This enables automated machine-to-enterprise cost accounting and real-time scrap anomaly alerts directly on planning dashboards.
+        </p>
+      </div>
+
+      <aside class="deepdive-sidebar-card">
+        <h4 style="font-family:var(--font-race); font-size:1.2rem; text-transform:uppercase; color:var(--neon-green); margin-bottom:14px;">Domain Capabilities</h4>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:10px; font-size:0.92rem; color:var(--text-secondary);">
+          <li style="display:flex; align-items:center; gap:8px;">
+            <span style="color:var(--neon-green); font-weight:700;">//</span> Model-Based Systems Engineering (MBSE)
+          </li>
+          <li style="display:flex; align-items:center; gap:8px;">
+            <span style="color:var(--neon-green); font-weight:700;">//</span> SysML & Architecture Design
+          </li>
+          <li style="display:flex; align-items:center; gap:8px;">
+            <span style="color:var(--neon-green); font-weight:700;">//</span> SAP ERP & MES Integration
+          </li>
+          <li style="display:flex; align-items:center; gap:8px;">
+            <span style="color:var(--neon-green); font-weight:700;">//</span> Industry 4.0 Digital Twin (AAS)
+          </li>
+          <li style="display:flex; align-items:center; gap:8px;">
+            <span style="color:var(--neon-green); font-weight:700;">//</span> Python Data Pipelines & JSON Standards
+          </li>
+          <li style="display:flex; align-items:center; gap:8px;">
+            <span style="color:var(--neon-green); font-weight:700;">//</span> Scrap Cost & Lean Manufacturing Analytics
+          </li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- Pagination -->
+    <div class="detail-pagination-bar">
+      <a href="idex-3dprinter.html" class="page-nav-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        <span>Prev: IDEX 3D Printer</span>
+      </a>
+
+      <a href="publications.html" class="page-nav-btn" style="border-color:var(--neon-green); color:var(--neon-green);">
+        <span>Next: Research Papers</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 12"></polyline></svg>
+      </a>
+    </div>
+  </main>
+
+  <footer style="padding:40px 0; border-top:1px solid var(--border-color); text-align:center; font-family:var(--font-mono); font-size:0.8rem; color:var(--text-muted);">
+    Pramod Ramakrishna // High-Octane Automotive & Systems Portfolio
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Independent Dual Extruder (IDEX) 3D Printer | Pramod Ramakrishna</title>
+  
+  <meta name="description" content="Engineering design, kinematic analysis, and hardware development of an Independent Dual Extruder (IDEX) industrial 3D printing system by Pramod Ramakrishna.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <!-- Sticky Top Navigation Bar -->
+  <nav class="page-header-nav">
+    <div class="container page-header-inner">
+      <a href="../index.html#portfolio" class="back-to-paddock-link">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        <span>Return to Paddock // Home</span>
+      </a>
+
+      <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">
+        PROJECT_REF: <span style="color: var(--turbo-amber); font-weight: 700;">IDEX-AM-V65</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Detail Hero Header -->
+  <header class="detail-hero-section">
+    <div class="container">
+      <span class="detail-header-badge" style="color: var(--turbo-amber);">// ADDITIVE MANUFACTURING // MECHATRONIC SYSTEMS</span>
+      <h1 class="detail-main-title">Independent Dual Extruder (IDEX) 3D Printer</h1>
+      <p class="detail-lead-summary">
+        Ground-up mechanical CAD architecture, kinematic optimization, and prototype commissioning of an industrial IDEX 3D printer capable of simultaneous multi-material deposition, soluble support structures, and synchronous duplicate manufacturing.
+      </p>
+    </div>
+  </header>
+
+  <!-- Technical Spec Sheet Panel -->
+  <main class="container">
+    <section class="spec-sheet-panel" style="border-top-color: var(--turbo-amber);">
+      <div class="spec-sheet-title" style="color: var(--turbo-amber);">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+        <span>IDEX Mechatronic System Specifications</span>
+      </div>
+
+      <table class="spec-sheet-table">
+        <tbody>
+          <tr>
+            <th>Kinematic Architecture</th>
+            <td>Independent Dual Extruder (IDEX) X-axis with dual independent stepper carriages on precision linear guide rails</td>
+          </tr>
+          <tr>
+            <th>Usable Build Envelope</th>
+            <td>350 mm × 300 mm × 400 mm (X × Y × Z)</td>
+          </tr>
+          <tr>
+            <th>Operational Modes</th>
+            <td>Multi-Material / Multi-Color, Soluble Support (PVA/BVOH), Synchronous Mirror Mode, and Synchronous Duplication Mode (2× output)</td>
+          </tr>
+          <tr>
+            <th>Thermal Capabilities</th>
+            <td>All-metal bi-metallic heatbreak rated to 350°C; 220V 800W cast aluminum heated bed rated to 130°C</td>
+          </tr>
+          <tr>
+            <th>Material Versatility</th>
+            <td>PLA, PETG, ABS, ASA, TPU (85A–98A flexible), Nylon (PA12), and Carbon-Fiber reinforced polymers (PA-CF, PETG-CF)</td>
+          </tr>
+          <tr>
+            <th>Positional Repeatability</th>
+            <td>X/Y Axis: &plusmn;15 microns via MGN12H linear guides; Z Axis: &plusmn;5 microns via dual synchronized lead screws</td>
+          </tr>
+          <tr>
+            <th>Nozzle Parking & Ooze Control</th>
+            <td>Active mechanical parking docks with spring-loaded brass brush wipes and silicone anti-ooze seal cups</td>
+          </tr>
+          <tr>
+            <th>Engineering Tools</th>
+            <td>SolidWorks (Parametric Assemblies & Interference Detection), Autodesk Fusion 360, ANSYS FEA, Klipper Firmware</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Visual Media Grid -->
+    <div class="section-hud-header">
+      <span class="hud-tag">CAD & Hardware Telemetry</span>
+      <h2 class="section-hud-title">Kinematic Assemblies & Hardware Prototypes</h2>
+    </div>
+
+    <div class="detail-media-grid">
+      <div class="detail-media-item">
+        <img src="../assets/images/project-idex-3dprinter.png" alt="IDEX 3D Printer SolidWorks Model">
+        <div class="detail-media-caption">
+          <span>SolidWorks CAD // Complete IDEX Kinematic Gantry Assembly</span>
+        </div>
+      </div>
+      <div class="detail-media-item">
+        <img src="../assets/images/project-cad-model.png" alt="Extruder Carriage Detailed Assembly">
+        <div class="detail-media-caption">
+          <span>Toolhead Design // Direct-Drive Dual Carriage & Tensioner</span>
+        </div>
+      </div>
+      <div class="detail-media-item">
+        <img src="../assets/images/project-hardware-prototype.jpeg" alt="Hardware Prototype Testing">
+        <div class="detail-media-caption">
+          <span>Physical Prototype // Functional Assembly & Wiring Harness</span>
+        </div>
+      </div>
+      <div class="detail-media-item">
+        <img src="../assets/images/project-mechanical-analysis.png" alt="Finite Element Stress Analysis">
+        <div class="detail-media-caption">
+          <span>Structural FEA // Gantry Beam Deflection Under Dynamic Load</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Engineering Narrative -->
+    <section class="engineering-deepdive-grid">
+      <div class="deepdive-content">
+        <h3>1. The Rationale for Independent Dual Extrusion</h3>
+        <p>
+          Conventional dual-extrusion printers mount two hotends on a single carriage. This introduces significant parasitic mass, nozzle oozing, cross-contamination, and reduces print speeds. The IDEX design separates the toolheads onto two distinct X-axis motor loops. While Toolhead 0 prints, Toolhead 1 parks outside the build volume over a silicone wiping station, eliminating stringing and oozing entirely.
+        </p>
+
+        <h3>2. Gantry Rigidity & High-Speed Kinematics</h3>
+        <p>
+          To maintain micro-step positional accuracy at accelerations exceeding 5,000 mm/s², the main X-gantry was engineered using a custom-extruded aluminum profile with internal cross-ribbing. FEA simulations under dynamic carriage inertia verified that gantry beam deflection remained below 12 microns during aggressive direction reversals.
+        </p>
+
+        <h3>3. Commercial Product Development at 3D PrintzKart</h3>
+        <p>
+          During my tenure as Product Development Engineer at 3D PrintzKart, this system architecture served as a foundational platform for delivering high-tolerance functional parts, custom jigs, fixtures, and end-use housings for industrial clients requiring heat-resistant and composite polymers.
+        </p>
+      </div>
+
+      <aside class="deepdive-sidebar-card">
+        <h4 style="font-family:var(--font-race); font-size:1.2rem; text-transform:uppercase; color:var(--turbo-amber); margin-bottom:14px;">Core Engineering Competencies</h4>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:10px; font-size:0.92rem; color:var(--text-secondary);">
+          <li style="display:flex; align-items:center; gap:8px;">
+            <span style="color:var(--turbo-amber); font-weight:700;">//</span> Design for Additive Manufacturing (DFAM)
+          </li>
+          <li style="display:flex; align-items:center; gap:8px;">
+            <span style="color:var(--turbo-amber); font-weight:700;">//</span> Precision Motion Mechanics & Linear Guides
+          </li>
+          <li style="display:flex; align-items:center; gap:8px;">
+            <span style="color:var(--turbo-amber); font-weight:700;">//</span> Thermal Dissipation & Hotend Sizing
+          </li>
+          <li style="display:flex; align-items:center; gap:8px;">
+            <span style="color:var(--turbo-amber); font-weight:700;">//</span> Stepper Motor Torque Calculation
+          </li>
+          <li style="display:flex; align-items:center; gap:8px;">
+            <span style="color:var(--turbo-amber); font-weight:700;">//</span> Rapid Prototyping & Functional Testing
+          </li>
+          <li style="display:flex; align-items:center; gap:8px;">
+            <span style="color:var(--turbo-amber); font-weight:700;">//</span> Klipper Firmware & Stepper Tuning
+          </li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- Pagination -->
+    <div class="detail-pagination-bar">
+      <a href="robot-bin-picking.html" class="page-nav-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        <span>Prev: VW Robot Bin-Picking</span>
+      </a>
+
+      <a href="bosch-systems.html" class="page-nav-btn" style="border-color:var(--turbo-amber); color:var(--turbo-amber);">
+        <span>Next: Bosch Industry 4.0</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 12"></polyline></svg>
+      </a>
+    </div>
+  </main>
+
+  <footer style="padding:40px 0; border-top:1px solid var(--border-color); text-align:center; font-family:var(--font-mono); font-size:0.8rem; color:var(--text-muted);">
+    Pramod Ramakrishna // High-Octane Automotive & Systems Portfolio
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

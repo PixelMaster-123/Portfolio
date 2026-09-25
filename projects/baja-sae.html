@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BAJA SAE All-Terrain Racing Vehicle | Pramod Ramakrishna</title>
+  
+  <meta name="description" content="Technical deep dive into the design, FEA simulation, suspension kinematics, and fabrication of the BAJA SAE off-road competition vehicle by Pramod Ramakrishna.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <!-- Sticky Top Navigation Bar -->
+  <nav class="page-header-nav">
+    <div class="container page-header-inner">
+      <a href="../index.html#portfolio" class="back-to-paddock-link">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        <span>Return to Paddock // Home</span>
+      </a>
+
+      <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">
+        PROJECT_REF: <span style="color: var(--racing-red); font-weight: 700;">ATV-2017-2020</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Detail Hero Header -->
+  <header class="detail-hero-section">
+    <div class="container">
+      <span class="detail-header-badge">// MOTORSPORT & VEHICLE DYNAMICS // SAE INTERNATIONAL</span>
+      <h1 class="detail-main-title">BAJA SAE All-Terrain Racing Vehicle</h1>
+      <p class="detail-lead-summary">
+        Design, structural FEA analysis, powertrain calibration, and trackside fabrication of single-seater off-road endurance racing prototypes engineered to conquer severe terrain, rock crawls, and high-speed endurance circuits across national BAJA seasons.
+      </p>
+    </div>
+  </header>
+
+  <!-- Technical Spec Sheet Panel -->
+  <main class="container">
+    <section class="spec-sheet-panel">
+      <div class="spec-sheet-title">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+        <span>Vehicle Technical Specifications // Telemetry Data</span>
+      </div>
+
+      <table class="spec-sheet-table">
+        <tbody>
+          <tr>
+            <th>Chassis Architecture</th>
+            <td>Tubular Spaceframe fabricated from AISI 4130 Seamless Chromoly (Normalized) Tubing</td>
+          </tr>
+          <tr>
+            <th>Structural FEA (ANSYS)</th>
+            <td>Front impact (4G deceleration), Rear impact (4G), Side impact (2G), Rollover load (1.5G); Factor of Safety &gt; 2.15</td>
+          </tr>
+          <tr>
+            <th>Powertrain</th>
+            <td>305cc Briggs & Stratton Vanguard 4-Stroke OHV Single Cylinder Engine (10 HP @ 3,800 RPM, 19.5 Nm Torque)</td>
+          </tr>
+          <tr>
+            <th>Transmission</th>
+            <td>Custom-tuned Gaged / CVTech Continuously Variable Transmission (CVT) paired with 2-stage spur gear reduction box</td>
+          </tr>
+          <tr>
+            <th>Front Suspension</th>
+            <td>Independent Double A-Arm (Wishbone) with gas-charged coilover dampers; 8.5 inches wheel travel</td>
+          </tr>
+          <tr>
+            <th>Rear Suspension</th>
+            <td>Multi-link Semi-Trailing Arm geometry designed to mitigate bump steer and maximize traction over ruts</td>
+          </tr>
+          <tr>
+            <th>Braking System</th>
+            <td>Dual independent hydraulic circuits with Wilwood tandem master cylinders; 4-wheel ventilated floating rotors</td>
+          </tr>
+          <tr>
+            <th>Curb Mass</th>
+            <td>178 kg (wet, without driver) with 42:58 rear-biased weight distribution for superior hill climb capability</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Photo Gallery Grid -->
+    <div class="section-hud-header">
+      <span class="hud-tag">Visual Telemetry</span>
+      <h2 class="section-hud-title">Race Paddock & Workshop Telemetry</h2>
+    </div>
+
+    <div class="detail-media-grid">
+      <div class="detail-media-item">
+        <img src="../assets/images/baja-racecar-1.jpg" alt="BAJA All-Terrain Vehicle on Dirt Track">
+        <div class="detail-media-caption">
+          <span>Trackside Testing // High-Speed Dirt Circuit</span>
+        </div>
+      </div>
+      <div class="detail-media-item">
+        <img src="../assets/images/baja-racecar-2.jpg" alt="BAJA Vehicle Static Inspection">
+        <div class="detail-media-caption">
+          <span>Technical Inspection // Scrutineering Paddock</span>
+        </div>
+      </div>
+      <div class="detail-media-item">
+        <img src="../assets/images/baja-team-3.jpg" alt="BAJA Team Assembly">
+        <div class="detail-media-caption">
+          <span>Pit Crew // Powertrain & Drivetrain Integration</span>
+        </div>
+      </div>
+      <div class="detail-media-item">
+        <img src="../assets/images/baja-workshop-4.jpg" alt="Chassis Fabrication Workshop">
+        <div class="detail-media-caption">
+          <span>Workshop // Tube Notching & TIG Welding</span>
+        </div>
+      </div>
+      <div class="detail-media-item">
+        <img src="../assets/images/baja-chassis-5.jpeg" alt="Chassis Frame Raw Assembly">
+        <div class="detail-media-caption">
+          <span>Roll Cage Structure // 4130 Chromoly Bare Frame</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Engineering Deep Dive Narrative -->
+    <section class="engineering-deepdive-grid">
+      <div class="deepdive-content">
+        <h3>1. Chassis Design & Finite Element Analysis (FEA)</h3>
+        <p>
+          The vehicle spaceframe was engineered from scratch according to strict SAE International safety rulebooks. AISI 4130 seamless tubing was chosen for its optimal strength-to-weight ratio and fatigue life under intense cyclic vibration. Triangulated nodes were strategically placed along the primary roll hoop, front roll hoop, and lateral diagonals to establish a rigid protective survival envelope.
+        </p>
+        <p>
+          Using ANSYS Mechanical, non-linear dynamic impact simulations were executed across front, side, rear, and rollover impact vectors. Stress concentrations near engine mounting lugs and suspension hardpoints were mitigated through gusset reinforcements, maintaining maximum von Mises stress safely below the yield limit while keeping total chassis weight under 42 kg.
+        </p>
+
+        <h3>2. Suspension Geometry & Kinematic Optimization</h3>
+        <p>
+          To maintain tire contact patch compliance across rock crawling and mud endurance courses, suspension hardpoints were tuned via kinematic simulation. Front roll center height was optimized to minimize roll angles during high-speed cornering without requiring heavy anti-roll bars. Ackermann steering geometry was mapped to eliminate low-speed scrubbing in tight hairpins.
+        </p>
+
+        <h3>3. Powertrain & CVT Calibration</h3>
+        <p>
+          The Continuously Variable Transmission (CVT) was custom-weighted with tuned flyweights, secondary spring preloads, and helix angles. This kept the Briggs & Stratton engine operating directly within its peak torque plateau (2,600–3,200 RPM) whether crawling vertical gradients or accelerating down straightaways.
+        </p>
+      </div>
+
+      <aside class="deepdive-sidebar-card">
+        <h4 style="font-family:var(--font-race); font-size:1.2rem; text-transform:uppercase; color:var(--telemetry-cyan); margin-bottom:14px;">Key Competencies Utilized</h4>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:10px; font-size:0.92rem; color:var(--text-secondary);">
+          <li style="display:flex; align-items:center; gap:8px;">
+            <span style="color:var(--racing-red); font-weight:700;">//</span> CAD Modeling (SolidWorks)
+          </li>
+          <li style="display:flex; align-items:center; gap:8px;">
+            <span style="color:var(--racing-red); font-weight:700;">//</span> FEA Structural Simulation (ANSYS)
+          </li>
+          <li style="display:flex; align-items:center; gap:8px;">
+            <span style="color:var(--racing-red); font-weight:700;">//</span> Vehicle Dynamics & Kinematics
+          </li>
+          <li style="display:flex; align-items:center; gap:8px;">
+            <span style="color:var(--racing-red); font-weight:700;">//</span> Drivetrain & CVT Calibration
+          </li>
+          <li style="display:flex; align-items:center; gap:8px;">
+            <span style="color:var(--racing-red); font-weight:700;">//</span> Precision TIG / MIG Welding
+          </li>
+          <li style="display:flex; align-items:center; gap:8px;">
+            <span style="color:var(--racing-red); font-weight:700;">//</span> Track Telemetry & Pit Crew Leadership
+          </li>
+        </ul>
+
+        <div style="margin-top:24px; padding-top:20px; border-top:1px solid var(--border-color);">
+          <div style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted); text-transform:uppercase;">COMPETITION RECORD</div>
+          <div style="font-family:var(--font-race); font-size:1.1rem; color:var(--text-primary); font-weight:700; margin-top:4px;">National BAJA SAE India (2017–2020)</div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Pagination -->
+    <div class="detail-pagination-bar">
+      <a href="../index.html#portfolio" class="page-nav-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        <span>All Systems</span>
+      </a>
+
+      <a href="robot-bin-picking.html" class="page-nav-btn" style="border-color:var(--racing-red); color:var(--racing-red);">
+        <span>Next: VW Robot Bin-Picking</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+    </div>
+  </main>
+
+  <footer style="padding:40px 0; border-top:1px solid var(--border-color); text-align:center; font-family:var(--font-mono); font-size:0.8rem; color:var(--text-muted);">
+    Pramod Ramakrishna // High-Octane Automotive & Systems Portfolio
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

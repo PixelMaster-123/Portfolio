@@ -3,82 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pramod Ramakrishna | Mechanical & Systems Engineer</title>
+  <title>Pramod Ramakrishna | Mechanical & Systems Engineer // Motorsport & Telemetry</title>
   
-  <meta name="description" content="Portfolio of Pramod Ramakrishna — Mechanical Engineer specializing in Model-Based Systems Engineering (MBSE), Industry 4.0, Robotics, Digital Twins, and Additive Manufacturing.">
-  <meta name="keywords" content="Pramod Ramakrishna, Mechanical Engineer, Systems Engineering, MBSE, Industry 4.0, Robotics, Digital Twin, Robert Bosch, OVGU Magdeburg, Additive Manufacturing">
+  <meta name="description" content="High-octane engineering portfolio of Pramod Ramakrishna — Mechanical & Systems Engineer specializing in Model-Based Systems Engineering (MBSE), Industry 4.0, Robotics, Digital Twins, and Motorsport.">
+  <meta name="keywords" content="Pramod Ramakrishna, Automotive Engineering, BAJA SAE, Systems Engineering, MBSE, Industry 4.0, Robotics, Volkswagen AG, Robert Bosch, OVGU Magdeburg">
   <meta name="author" content="Pramod Ramakrishna">
 
-  <!-- Open Graph / Social Meta -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Pramod Ramakrishna | Mechanical & Systems Engineer">
-  <meta property="og:description" content="Mechanical Engineer specializing in MBSE, Industry 4.0, Robotics, Digital Twin, and Additive Manufacturing.">
+  <meta property="og:description" content="High-octane automotive & systems engineering portfolio with interactive telemetry, BAJA SAE racing, and Industry 4.0 robotics.">
   <meta property="og:image" content="assets/images/profile-headshot.jpg">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2338bdf8'/><text x='50%' y='55%' dominant-baseline='central' text-anchor='middle' font-family='sans-serif' font-size='48' font-weight='800' fill='%23ffffff'>PR</text></svg>">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 
-  <!-- Google Fonts: Inter -->
+  <!-- Google Fonts: Chakra Petch (Motorsport), JetBrains Mono, Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Stylesheet -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-  <!-- Ambient background glow -->
-  <div class="bg-ambient-glow" aria-hidden="true"></div>
-
-  <!-- Navigation Bar -->
+  <!-- Top Motorsport Cockpit Header -->
   <header class="site-navbar">
     <div class="container nav-container">
-      <a href="#hero" class="brand-logo" aria-label="Pramod Ramakrishna Home">
-        <div class="brand-symbol">PR</div>
-        <div class="brand-title">
+      <a href="#hero" class="brand-badge" aria-label="Pramod Ramakrishna Paddock">
+        <div class="brand-tach-logo">
+          <span class="rpm-label">RPM</span>
+          <span class="initials">PR</span>
+        </div>
+        <div class="brand-meta">
           <span class="brand-name">Pramod Ramakrishna</span>
-          <span class="brand-subtitle">Mechanical & Systems Engineer</span>
+          <span class="brand-spec">Systems & Mechanical Engineer</span>
         </div>
       </a>
 
-      <!-- Desktop Nav Links -->
+      <!-- Nav Links -->
       <nav>
         <ul class="nav-links" id="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#expertise">Expertise</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#expertise">Domains</a></li>
+          <li><a href="#portfolio">Telemetry & Projects</a></li>
+          <li><a href="#experience">Timeline</a></li>
           <li><a href="#publications">Publications</a></li>
-          <li><a href="#honors">Distinctions</a></li>
-          <li><a href="#hobbies">Hobbies</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
 
       <!-- Nav Actions -->
       <div class="nav-actions">
-        <!-- Theme Toggle -->
-        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="5"></circle>
-            <line x1="12" y1="1" x2="12" y2="3"></line>
-            <line x1="12" y1="21" x2="12" y2="23"></line>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-            <line x1="1" y1="12" x2="3" y2="12"></line>
-            <line x1="21" y1="12" x2="23" y2="12"></line>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-          </svg>
+        <!-- Interactive HUD Audio Toggle -->
+        <button id="sound-toggle-btn" class="hud-sound-btn" title="Toggle Interactive Cockpit Audio">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+          <span>AUDIO: MUTED</span>
         </button>
 
-        <a href="#contact" class="btn-contact-nav">
-          <span>Get in Touch</span>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line></svg>
+        </button>
+
+        <a href="#contact" class="btn-telemetry-launch">
+          <span>Connect</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
         </a>
 
-        <!-- Mobile Toggle -->
+        <!-- Mobile Menu Toggle -->
         <button class="mobile-toggle" id="mobile-toggle" aria-label="Open Navigation Menu">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
         </button>
@@ -86,847 +79,653 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero Cockpit Section -->
   <section class="hero-section" id="hero">
     <div class="container">
       <div class="hero-grid">
-        <div class="hero-content">
-          <div class="hero-badge">
-            <span class="status-dot"></span>
-            <span>Mechanical Engineer • Systems Engineering (MBSE) • Industry 4.0</span>
+        <div class="hero-left-content">
+          <div class="telemetry-status-banner">
+            <span class="tach-pulse-dot"></span>
+            <span>SYSTEM CHANNELS: ACTIVE // MBSE & AUTOMOTIVE TELEMETRY ONLINE</span>
           </div>
 
-          <h1 class="hero-title">
-            Engineering the Future of <span class="gradient-text">Manufacturing</span> & Robotics
+          <h1 class="hero-headline">
+            Engineering High-Performance <span class="text-racing-red">Automotive</span> & Robotics Systems
           </h1>
 
-          <p class="hero-description">
-            Hello, I’m <strong>Pramod Ramakrishna</strong> — a Mechanical & Systems Engineer specializing in Model-Based Systems Engineering (MBSE), smart automation, digital twins, and additive manufacturing. Experienced with Robert Bosch GmbH, Volkswagen AG production line research, and Otto-von-Guericke Universität Magdeburg.
+          <p class="hero-bio">
+            I am <strong>Pramod Ramakrishna</strong> — a Mechanical & Systems Engineer specializing in Model-Based Systems Engineering (MBSE), industrial automation, robotics, and vehicle dynamics. M.Sc. graduate from Otto-von-Guericke-Universität Magdeburg with proven contributions at <strong>Robert Bosch GmbH</strong> and <strong>Volkswagen AG</strong>.
           </p>
 
-          <div class="hero-actions">
-            <a href="#portfolio" class="btn-primary">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
-              <span>Explore Portfolio</span>
-            </a>
-            <a href="#contact" class="btn-secondary">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-              <span>Contact Me</span>
-            </a>
-            <button id="copy-email-btn" class="btn-secondary" title="Copy email address to clipboard">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-              <span>Copy Email</span>
-            </button>
+          <!-- Interactive Drive Mode Selector -->
+          <div class="drive-mode-container">
+            <span class="mode-label">// SELECT COCKPIT DRIVE MODE (FILTER TELEMETRY):</span>
+            <div class="drive-modes">
+              <button class="mode-btn active" data-mode="all">🏁 All Systems</button>
+              <button class="mode-btn" data-mode="racing">🏎️ Track / BAJA Racing</button>
+              <button class="mode-btn" data-mode="robotics">🤖 VW Robotics</button>
+              <button class="mode-btn" data-mode="systems">⚙️ Bosch MBSE</button>
+            </div>
           </div>
 
-          <div class="hero-quick-info">
-            <div class="info-pill">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-              <a href="mailto:rpramod27@gmail.com">rpramod27@gmail.com</a>
-            </div>
-            <div class="info-pill">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-              <a href="tel:+919742398505">+91 9742398505</a>
-            </div>
-            <div class="info-pill">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-              <span>Bengaluru, India • Germany</span>
-            </div>
-            <div class="info-pill">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-              <a href="https://www.linkedin.com/in/pramod-r8/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
-            </div>
+          <!-- Hero Actions -->
+          <div class="hero-cta-row">
+            <a href="#portfolio" class="btn-action-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+              <span>Explore Telemetry Specs</span>
+            </a>
+            <a href="#contact" class="btn-action-outline">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>Contact Paddock</span>
+            </a>
+          </div>
+
+          <!-- Quick Contact Pills -->
+          <div style="display:flex; flex-wrap:wrap; gap:16px; font-family:var(--font-mono); font-size:0.82rem; color:var(--text-secondary);">
+            <span>📍 Bengaluru, India • Germany</span>
+            <span>✉️ <a href="mailto:rpramod27@gmail.com" style="color:var(--telemetry-cyan);">rpramod27@gmail.com</a></span>
+            <span>📞 <a href="tel:+919742398505" style="color:var(--text-primary);">+91 9742398505</a></span>
           </div>
         </div>
 
-        <!-- Hero Avatar Card -->
-        <div class="hero-visual">
-          <div class="hero-card">
-            <div class="hero-img-wrapper" data-lightbox data-lightbox-src="assets/images/profile-headshot.jpg" data-lightbox-caption="Pramod Ramakrishna — Mechanical & Systems Engineer">
-              <img src="assets/images/profile-headshot.jpg" alt="Pramod Ramakrishna" class="hero-img">
+        <!-- Right Cockpit HUD Visual -->
+        <div class="hero-cockpit-card">
+          <div class="cockpit-header">
+            <span>COCKPIT_ID: PR-MK1</span>
+            <span class="hud-live-tag"><span class="tach-pulse-dot" style="background:var(--neon-green); box-shadow:0 0 8px var(--neon-green);"></span> LIVE SENSORS</span>
+          </div>
+
+          <div class="cockpit-img-wrap">
+            <img src="assets/images/profile-headshot.jpg" alt="Pramod Ramakrishna Portrait" class="cockpit-img">
+          </div>
+
+          <!-- Interactive Tachometer Widget -->
+          <div class="tachometer-widget" id="tachometer-widget" title="Hover or Click to Rev Engine!">
+            <div class="tach-info">
+              <span class="tach-val" id="tach-value">1,200</span>
+              <span class="tach-lbl">ENGINE RPM (CLICK TO REV)</span>
             </div>
 
-            <!-- Floating Badge: Bosch -->
-            <div class="floating-badge badge-bosch">
-              <div class="badge-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
-              </div>
-              <div>
-                <div style="font-size:0.75rem; color:var(--text-muted);">Master's Thesis & Intern</div>
-                <div>Robert Bosch GmbH</div>
-              </div>
-            </div>
-
-            <!-- Floating Badge: M.Sc. Degree -->
-            <div class="floating-badge badge-degree">
-              <div class="badge-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
-              </div>
-              <div>
-                <div style="font-size:0.75rem; color:var(--text-muted);">M.Sc. Systems Engineering</div>
-                <div>OVGU Magdeburg</div>
-              </div>
+            <!-- LED Shift Lights Bar -->
+            <div class="tach-dial-bar">
+              <div class="tach-led green"></div>
+              <div class="tach-led green"></div>
+              <div class="tach-led green"></div>
+              <div class="tach-led yellow"></div>
+              <div class="tach-led yellow"></div>
+              <div class="tach-led red"></div>
+              <div class="tach-led red"></div>
+              <div class="tach-led red"></div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <!-- Quick Telemetry Metric Bar -->
+      <div class="telemetry-specs-bar">
+        <div class="spec-block">
+          <span class="spec-block-val">M.Sc. SYSTEMS ENG.</span>
+          <span class="spec-block-lbl">Otto-von-Guericke-Univ. Magdeburg</span>
+        </div>
+        <div class="spec-block" style="border-left-color: var(--racing-red);">
+          <span class="spec-block-val">ROBERT BOSCH GMBH</span>
+          <span class="spec-block-lbl">Master's Thesis & Industry 4.0 Intern</span>
+        </div>
+        <div class="spec-block" style="border-left-color: var(--turbo-amber);">
+          <span class="spec-block-val">VOLKSWAGEN AG</span>
+          <span class="spec-block-lbl">Industrial Robot Bin-Picking R&D</span>
+        </div>
+        <div class="spec-block" style="border-left-color: var(--neon-green);">
+          <span class="spec-block-val">BAJA SAE RACING</span>
+          <span class="spec-block-lbl">Chassis Design, FEA & Powertrain</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- About Me Section -->
-  <section id="about">
+  <!-- Preface / About Me Section -->
+  <section id="about" style="background: var(--bg-primary);">
     <div class="container">
-      <div class="about-grid">
-        <div class="about-img-box" data-lightbox data-lightbox-src="assets/images/profile-about.jpg" data-lightbox-caption="Hey! I'm Pramod">
-          <img src="assets/images/profile-about.jpg" alt="Pramod Ramakrishna Portrait" class="about-img">
-        </div>
+      <div class="section-hud-header">
+        <span class="hud-tag">Paddock Briefing</span>
+        <h2 class="section-hud-title">Preface // Engineering Journey</h2>
+      </div>
 
-        <div class="about-content">
-          <span class="section-tag">Preface & Background</span>
-          <h2 class="section-title">Hey! I'm Pramod</h2>
-          
-          <p class="about-text">
-            I am a <strong>Mechanical Engineer</strong> with a strong foundation in mechanical design, research, and development. My experience spans key areas such as manufacturing, digitalization, factory automation, and robotics.
+      <div class="engineering-deepdive-grid">
+        <div class="deepdive-content">
+          <h3 style="font-size: 2rem;">Hey! I'm Pramod</h3>
+          <p>
+            I am a <strong>Mechanical Engineer</strong> with a strong foundation in mechanical design, vehicle dynamics, research, and development. My experience spans high-impact engineering sectors including automotive manufacturing, digitalization, factory automation, and robotics.
           </p>
-          <p class="about-text">
+          <p>
             I am passionate about leveraging technology to drive innovation and efficiency in manufacturing systems and thrive in collaborative, innovation-driven environments where I can contribute to impactful projects at the intersection of technology and manufacturing.
           </p>
+          <p>
+            From fabricating 4130 Chromoly tubular roll cages in national BAJA SAE off-road endurance racing competitions, to authoring SysML architectures integrating shopfloor MES with SAP ERP at <strong>Robert Bosch GmbH</strong>, I focus on building robust, scalable cyber-physical solutions.
+          </p>
+        </div>
 
-          <div class="about-stats">
-            <div class="stat-item">
-              <span class="stat-number">M.Sc.</span>
-              <span class="stat-label">Systems Engineering for Manufacturing (Germany)</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-number">4+</span>
-              <span class="stat-label">Years Cross-Disciplinary Engineering & Research</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-number">Top-Tier</span>
-              <span class="stat-label">Bosch & Volkswagen Production Line Projects</span>
-            </div>
-          </div>
+        <div style="border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-color); background: var(--bg-secondary); clip-path: polygon(0 0, 100% 0, 100% calc(100% - 16px), calc(100% - 16px) 100%, 0 100%);">
+          <img src="assets/images/profile-about.jpg" alt="Pramod Ramakrishna Engineering" style="width: 100%; height: 100%; object-fit: cover;">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Core Competencies / Areas of Expertise (Interests) -->
-  <section id="expertise" style="background: var(--bg-secondary);">
+  <!-- Domains & Core Competencies -->
+  <section id="expertise">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Domains & Core Competencies</span>
-        <h2 class="section-title">Areas of Specialization</h2>
-        <p class="section-subtitle">A comprehensive engineering toolkit bridging traditional mechanical design with modern Industry 4.0 digitalization.</p>
+      <div class="section-hud-header">
+        <span class="hud-tag">System Architectures</span>
+        <h2 class="section-hud-title">Core Engineering Domains</h2>
+        <p class="section-hud-sub">Bridging automotive vehicle kinematics with modern Industry 4.0 digital engineering chains.</p>
       </div>
 
-      <div class="domains-grid">
+      <div class="motorsport-cards-grid">
         <!-- Domain 1: MBSE -->
-        <div class="domain-card">
-          <div class="domain-icon-wrap">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+        <div class="motorsport-card">
+          <div class="card-body">
+            <span class="card-category">// MBSE & ARCHITECTURE</span>
+            <h3 class="card-title">Model-Based Systems Engineering</h3>
+            <p class="card-excerpt">
+              Model-Based System Design, Systems Engineering Architecture, Requirements Engineering, SysML, UML, AutomationML, Python, and Data Pipeline Management.
+            </p>
+            <div class="card-spec-tags">
+              <span class="card-spec-tag">SysML</span>
+              <span class="card-spec-tag">AutomationML</span>
+              <span class="card-spec-tag">MBSE</span>
+              <span class="card-spec-tag">Python</span>
+            </div>
+            <a href="projects/bosch-systems.html" class="card-view-link">
+              <span>View Bosch MBSE Architecture</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
           </div>
-          <h3 class="domain-title">Model-Based Systems Engineering (MBSE)</h3>
-          <ul class="domain-skills">
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Model-Based System Design</span></li>
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Systems Engineering & Architecture</span></li>
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Requirements Engineering</span></li>
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Systems Thinking</span></li>
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>SysML, UML, AutomationML, Python</span></li>
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Data Management and Engineering</span></li>
-          </ul>
         </div>
 
         <!-- Domain 2: Industry 4.0 -->
-        <div class="domain-card">
-          <div class="domain-icon-wrap">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+        <div class="motorsport-card">
+          <div class="card-body">
+            <span class="card-category" style="color:var(--telemetry-cyan);">// INDUSTRIAL AUTOMATION</span>
+            <h3 class="card-title">Industry 4.0 & Digital Twin</h3>
+            <p class="card-excerpt">
+              Digital Plant Modeling, Asset Administration Shells (AAS), Industrial Robotics, 3D Vision Systems, MES and SAP ERP shopfloor integration, and Business Development.
+            </p>
+            <div class="card-spec-tags">
+              <span class="card-spec-tag">Digital Twin</span>
+              <span class="card-spec-tag">AAS</span>
+              <span class="card-spec-tag">SAP ERP</span>
+              <span class="card-spec-tag">MES</span>
+            </div>
+            <a href="projects/robot-bin-picking.html" class="card-view-link" style="color:var(--telemetry-cyan);">
+              <span>View VW Automation Cell</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
           </div>
-          <h3 class="domain-title">Industry 4.0 & Product Management</h3>
-          <ul class="domain-skills">
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Industrial Automation & Digital Twins</span></li>
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Digital Engineering Chains & Pipelines</span></li>
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Asset Administration Shells (AAS)</span></li>
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Industrial Robotics & Vision</span></li>
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>MES, SAP, and PLM Integration</span></li>
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Business Development</span></li>
-          </ul>
         </div>
 
-        <!-- Domain 3: Product Design -->
-        <div class="domain-card">
-          <div class="domain-icon-wrap">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+        <!-- Domain 3: Motorsport & Automotive -->
+        <div class="motorsport-card">
+          <div class="card-body">
+            <span class="card-category" style="color:var(--turbo-amber);">// VEHICLE DYNAMICS</span>
+            <h3 class="card-title">Motorsport & Electric Mobility</h3>
+            <p class="card-excerpt">
+              Chassis spaceframe fabrication, Roll Cage FEA in ANSYS, suspension kinematics, CVT calibration, Battery Management Systems (BMS), ADAS, MATLAB & Simulink.
+            </p>
+            <div class="card-spec-tags">
+              <span class="card-spec-tag">BAJA SAE</span>
+              <span class="card-spec-tag">ANSYS FEA</span>
+              <span class="card-spec-tag">CVT Powertrain</span>
+              <span class="card-spec-tag">BMS</span>
+            </div>
+            <a href="projects/baja-sae.html" class="card-view-link" style="color:var(--turbo-amber);">
+              <span>View BAJA SAE Vehicle Specs</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
           </div>
-          <h3 class="domain-title">Product Design & Development</h3>
-          <ul class="domain-skills">
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Engineering Design & Structural Analysis</span></li>
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Rapid Prototyping & Functional Testing</span></li>
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>DFM, DFAM & 3D Printing Systems</span></li>
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>DFA & DFMEA Quality Frameworks</span></li>
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>SolidWorks, Fusion 360, SolidEdge</span></li>
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>ANSYS FEA & Simulation</span></li>
-          </ul>
-        </div>
-
-        <!-- Domain 4: Electric Mobility -->
-        <div class="domain-card">
-          <div class="domain-icon-wrap">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
-          </div>
-          <h3 class="domain-title">Electric Mobility & Automotive</h3>
-          <ul class="domain-skills">
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Automotive & Lean Manufacturing</span></li>
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Battery Management Systems (BMS)</span></li>
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Battery Development & Safety</span></li>
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Advanced Driver Assistance (ADAS)</span></li>
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Project Management</span></li>
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>MATLAB & Simulink</span></li>
-          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Experience & Education Timeline -->
-  <section id="experience">
+  <!-- Interactive Telemetry Showcase (Every card links to a dedicated detail page!) -->
+  <section id="portfolio" style="background: var(--bg-primary);">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Career & Academia</span>
-        <h2 class="section-title">Experience & Education</h2>
-        <p class="section-subtitle">Chronological progression of academic excellence, industry internships, and research appointments.</p>
+      <div class="section-hud-header">
+        <span class="hud-tag">System Directory</span>
+        <h2 class="section-hud-title">Featured Engineering Telemetry</h2>
+        <p class="section-hud-sub">Click any project to access complete technical specifications, FEA reports, CAD topologies, and operational telemetry.</p>
       </div>
 
-      <div class="timeline-wrapper">
+      <!-- Filter Bar -->
+      <div class="filter-chassis-bar">
+        <button class="filter-btn active" data-filter="all">All Systems (7)</button>
+        <button class="filter-btn" data-filter="racing">🏎️ Motorsport & BAJA</button>
+        <button class="filter-btn" data-filter="robotics">🤖 VW Robotics</button>
+        <button class="filter-btn" data-filter="additive">🖨️ IDEX 3D Printing</button>
+        <button class="filter-btn" data-filter="systems">⚙️ Bosch MBSE</button>
+      </div>
+
+      <!-- Showcase Cards Grid -->
+      <div class="motorsport-cards-grid">
+        <!-- 1. BAJA SAE Racing -->
+        <a href="projects/baja-sae.html" class="motorsport-card" data-category="racing">
+          <div class="card-visual-wrap">
+            <span class="card-hud-badge">4130 CHROMOLY // 10 HP CVT</span>
+            <img src="assets/images/baja-racecar-1.jpg" alt="BAJA SAE All-Terrain Vehicle" class="card-visual-img">
+            <div class="card-telemetry-overlay">
+              <span>WEIGHT: 178 KG</span>
+              <span>FEA FOS: &gt; 2.1</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-category">// MOTORSPORT & VEHICLE DYNAMICS</span>
+            <h3 class="card-title">BAJA SAE All-Terrain Racing Vehicle</h3>
+            <p class="card-excerpt">
+              Spaceframe chassis fabrication, ANSYS dynamic impact simulation, double-wishbone suspension tuning, and competition track testing across national endurance seasons.
+            </p>
+            <div class="card-spec-tags">
+              <span class="card-spec-tag">Chassis FEA</span>
+              <span class="card-spec-tag">CVT Calibration</span>
+              <span class="card-spec-tag">Suspension</span>
+              <span class="card-spec-tag">SAE India</span>
+            </div>
+            <div class="card-view-link">
+              <span>Open Vehicle Telemetry & Specs</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </div>
+          </div>
+        </a>
+
+        <!-- 2. Volkswagen AG Robot Bin-Picking -->
+        <a href="projects/robot-bin-picking.html" class="motorsport-card" data-category="robotics">
+          <div class="card-visual-wrap">
+            <span class="card-hud-badge" style="color:var(--telemetry-cyan);">6-AXIS // 3D POINT CLOUD</span>
+            <img src="assets/images/project-robot-station.jpg" alt="Volkswagen AG Robot Bin-Picking Station" class="card-visual-img">
+            <div class="card-telemetry-overlay">
+              <span>CYCLE: &lt; 4.8s</span>
+              <span>ACCURACY: 98.4%</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-category" style="color:var(--telemetry-cyan);">// INDUSTRIAL ROBOTICS</span>
+            <h3 class="card-title">Volkswagen AG Robot Bin-Picking System</h3>
+            <p class="card-excerpt">
+              Automated 6-DOF robotic manipulation station using structured-light 3D vision, CAD point-cloud matching, and collision avoidance deployed for Volkswagen assembly lines.
+            </p>
+            <div class="card-spec-tags">
+              <span class="card-spec-tag">Volkswagen AG</span>
+              <span class="card-spec-tag">Point Cloud Library</span>
+              <span class="card-spec-tag">ROS</span>
+              <span class="card-spec-tag">Vision AI</span>
+            </div>
+            <div class="card-view-link" style="color:var(--telemetry-cyan);">
+              <span>Open Robotics System Specs</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </div>
+          </div>
+        </a>
+
+        <!-- 3. IDEX 3D Printer -->
+        <a href="projects/idex-3dprinter.html" class="motorsport-card" data-category="additive">
+          <div class="card-visual-wrap">
+            <span class="card-hud-badge" style="color:var(--turbo-amber);">DUAL TOOLHEAD // 350°C</span>
+            <img src="assets/images/project-idex-3dprinter.png" alt="IDEX 3D Printer CAD Model" class="card-visual-img">
+            <div class="card-telemetry-overlay">
+              <span>ENVELOPE: 350×300×400mm</span>
+              <span>PARKING: ACTIVE</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-category" style="color:var(--turbo-amber);">// ADDITIVE MANUFACTURING</span>
+            <h3 class="card-title">Independent Dual Extruder (IDEX) System</h3>
+            <p class="card-excerpt">
+              Full kinematic design in SolidWorks, direct-drive dual hotends, dynamic deflection FEA, and functional parts engineering developed for commercial additive clients.
+            </p>
+            <div class="card-spec-tags">
+              <span class="card-spec-tag">SolidWorks</span>
+              <span class="card-spec-tag">DFAM</span>
+              <span class="card-spec-tag">Precision Mechanics</span>
+              <span class="card-spec-tag">3D PrintzKart</span>
+            </div>
+            <div class="card-view-link" style="color:var(--turbo-amber);">
+              <span>Open IDEX Mechatronic Specs</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </div>
+          </div>
+        </a>
+
+        <!-- 4. Robert Bosch GmbH MBSE -->
+        <a href="projects/bosch-systems.html" class="motorsport-card" data-category="systems">
+          <div class="card-visual-wrap">
+            <span class="card-hud-badge" style="color:var(--neon-green);">SAP ERP // MES DATA STREAM</span>
+            <img src="assets/images/project-automation-diagram.png" alt="Automation Architecture Diagram" class="card-visual-img">
+            <div class="card-telemetry-overlay">
+              <span>FRAMEWORK: MBSE / SysML</span>
+              <span>HOST: BOSCH</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-category" style="color:var(--neon-green);">// INDUSTRY 4.0 & MBSE</span>
+            <h3 class="card-title">Robert Bosch: Scrap Cost Systems Engineering</h3>
+            <p class="card-excerpt">
+              Master's thesis architecture uniting SAP ERP controlling with real-time MES shopfloor data streams using SysML models and Asset Administration Shells (AAS).
+            </p>
+            <div class="card-spec-tags">
+              <span class="card-spec-tag">Robert Bosch GmbH</span>
+              <span class="card-spec-tag">SAP ERP</span>
+              <span class="card-spec-tag">MES</span>
+              <span class="card-spec-tag">Digital Twin</span>
+            </div>
+            <div class="card-view-link" style="color:var(--neon-green);">
+              <span>Open MBSE Architecture Specs</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </div>
+          </div>
+        </a>
+
+        <!-- 5. Scientific Publications -->
+        <a href="projects/publications.html" class="motorsport-card" data-category="systems">
+          <div class="card-visual-wrap">
+            <span class="card-hud-badge" style="color:var(--telemetry-cyan);">PEER-REVIEWED RESEARCH</span>
+            <img src="assets/images/publication-1.png" alt="Scientific Publications" class="card-visual-img">
+            <div class="card-telemetry-overlay">
+              <span>PAPERS: 3 PUBLISHED</span>
+              <span>STANDARDS: JSON / AAS</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-category" style="color:var(--telemetry-cyan);">// RESEARCH & PAPERS</span>
+            <h3 class="card-title">Scientific Publications & Studies</h3>
+            <p class="card-excerpt">
+              Published papers investigating JSON data standards in smart manufacturing organizations and chemical characterization of bio-fiber polymer composites for automotive structures.
+            </p>
+            <div class="card-spec-tags">
+              <span class="card-spec-tag">JSON Standards</span>
+              <span class="card-spec-tag">Bio-Composites</span>
+              <span class="card-spec-tag">ResearchGate</span>
+            </div>
+            <div class="card-view-link" style="color:var(--telemetry-cyan);">
+              <span>Read Full Publications</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </div>
+          </div>
+        </a>
+
+        <!-- 6. Diplomatic Reception Berlin -->
+        <a href="projects/diplomatic-mission.html" class="motorsport-card" data-category="systems">
+          <div class="card-visual-wrap">
+            <span class="card-hud-badge" style="color:var(--turbo-amber);">BERLIN, GERMANY // 2022</span>
+            <img src="assets/images/berlin-embassy-republic-day.jpg" alt="Embassy of India in Berlin" class="card-visual-img">
+            <div class="card-telemetry-overlay">
+              <span>OCCASION: REPUBLIC DAY</span>
+              <span>ROLE: DELEGATE</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-category" style="color:var(--turbo-amber);">// DIPLOMATIC HONORS</span>
+            <h3 class="card-title">Embassy of India, Berlin Representation</h3>
+            <p class="card-excerpt">
+              Represented international academic scholars from Otto-von-Guericke-Universität Magdeburg at the Embassy of India in Berlin, discussing bilateral academic exchanges.
+            </p>
+            <div class="card-spec-tags">
+              <span class="card-spec-tag">Diplomacy</span>
+              <span class="card-spec-tag">Leadership</span>
+              <span class="card-spec-tag">Berlin Embassy</span>
+            </div>
+            <div class="card-view-link" style="color:var(--turbo-amber);">
+              <span>View Diplomatic Record</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </div>
+          </div>
+        </a>
+
+        <!-- 7. Hobbies: Bansuri & Travel -->
+        <a href="projects/hobbies.html" class="motorsport-card" data-category="systems">
+          <div class="card-visual-wrap">
+            <span class="card-hud-badge">ACOUSTICS & NATURE</span>
+            <img src="assets/images/hobby-1.jpg" alt="Bansuri Flute Playing" class="card-visual-img">
+            <div class="card-telemetry-overlay">
+              <span>DISCIPLINE: BANSURI FLUTE</span>
+              <span>EXPEDITIONS: EUROPE</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-category">// BEYOND ENGINEERING</span>
+            <h3 class="card-title">Classical Bansuri & Alpine Expeditions</h3>
+            <p class="card-excerpt">
+              Acoustic resonance dynamics of the classical Indian bamboo flute (@Flutemod27) and photographic documentation of European castles, landscapes, and alpine passes.
+            </p>
+            <div class="card-spec-tags">
+              <span class="card-spec-tag">Bansuri Flute</span>
+              <span class="card-spec-tag">Acoustic Physics</span>
+              <span class="card-spec-tag">Photography</span>
+            </div>
+            <div class="card-view-link">
+              <span>Open Passion Journal</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Career Experience HUD Timeline -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-hud-header">
+        <span class="hud-tag">Chronological Log</span>
+        <h2 class="section-hud-title">Experience & Academic Timeline</h2>
+      </div>
+
+      <div class="hud-timeline-container">
         <!-- 1. Research Associate: OVGU -->
-        <div class="timeline-item">
-          <div class="timeline-node"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <h3 class="timeline-role">Research Associate</h3>
-              <span class="timeline-date">Jun 2025 – Oct 2025</span>
+        <div class="timeline-entry">
+          <div class="timeline-gear-pin"></div>
+          <div class="timeline-hud-card">
+            <div class="timeline-meta-bar">
+              <h3 class="timeline-job-title">Research Associate</h3>
+              <span class="timeline-tenure">Jun 2025 – Oct 2025</span>
             </div>
-            <div class="timeline-company">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+            <div class="timeline-org">
               <span>Otto-von-Guericke-Universität Magdeburg</span>
             </div>
-            <p class="timeline-desc">
-              Research Associate under the Faculty of Mechanical Engineering, Chair of Production Systems and Automation. Contributed to advanced research projects including consistent process-oriented data modeling in production system engineering (DIAMOND / KPDM).
+            <p class="timeline-description">
+              Faculty of Mechanical Engineering, Chair of Production Systems and Automation. Contributed to consistent, process-oriented data modeling across the lifecycle of production systems (DIAMOND / KPDM project).
             </p>
-            <div class="timeline-tag-list">
-              <span class="timeline-tag">Production Systems</span>
-              <span class="timeline-tag">Automation</span>
-              <span class="timeline-tag">Data Modeling</span>
-              <span class="timeline-tag">Research</span>
-            </div>
           </div>
         </div>
 
-        <!-- 2. Master's Thesis: Bosch -->
-        <div class="timeline-item">
-          <div class="timeline-node"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <h3 class="timeline-role">Master's Thesis Candidate</h3>
-              <span class="timeline-date">May 2024 – Dec 2024</span>
+        <!-- 2. Master's Thesis: Robert Bosch GmbH -->
+        <div class="timeline-entry">
+          <div class="timeline-gear-pin"></div>
+          <div class="timeline-hud-card">
+            <div class="timeline-meta-bar">
+              <h3 class="timeline-job-title">Master's Thesis Candidate</h3>
+              <span class="timeline-tenure">May 2024 – Dec 2024</span>
             </div>
-            <div class="timeline-company">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+            <div class="timeline-org">
               <span>Robert Bosch GmbH</span>
             </div>
-            <p class="timeline-desc">
-              <strong>Thesis Topic:</strong> Integration of SAP and MES data-streams to efficiently detect scrap costs using a systems engineering approach. Designed an end-to-end framework uniting enterprise ERP and shopfloor execution data to enhance cost visibility and reduce scrap in high-precision automotive manufacturing.
+            <p class="timeline-description">
+              Integration of SAP and MES data-streams to efficiently detect scrap costs using a Model-Based Systems Engineering (MBSE) approach for active automotive sample manufacturing.
             </p>
-            <div class="timeline-tag-list">
-              <span class="timeline-tag">SAP Integration</span>
-              <span class="timeline-tag">MES Data Streams</span>
-              <span class="timeline-tag">Scrap Cost Analytics</span>
-              <span class="timeline-tag">Systems Engineering</span>
-            </div>
           </div>
         </div>
 
-        <!-- 3. Engineering Intern: Bosch -->
-        <div class="timeline-item">
-          <div class="timeline-node"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <h3 class="timeline-role">Engineering Intern — Digitalization & Industry 4.0</h3>
-              <span class="timeline-date">Dec 2023 – May 2024</span>
+        <!-- 3. Engineering Intern: Robert Bosch GmbH -->
+        <div class="timeline-entry">
+          <div class="timeline-gear-pin"></div>
+          <div class="timeline-hud-card">
+            <div class="timeline-meta-bar">
+              <h3 class="timeline-job-title">Engineering Intern — Digitalization & Industry 4.0</h3>
+              <span class="timeline-tenure">Dec 2023 – May 2024</span>
             </div>
-            <div class="timeline-company">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+            <div class="timeline-org">
               <span>Robert Bosch GmbH</span>
             </div>
-            <p class="timeline-desc">
-              Engineering Intern at the Department of Sample Production and Planning. Undertook core digitalization and Industry 4.0 implementations directly on the active manufacturing production line, optimizing assembly flow and data capture.
+            <p class="timeline-description">
+              Department of Sample Production and Planning. Led shopfloor digitalization initiatives and Industry 4.0 sensor telemetry implementation directly inside the live sample production line.
             </p>
-            <div class="timeline-tag-list">
-              <span class="timeline-tag">Industry 4.0</span>
-              <span class="timeline-tag">Sample Production</span>
-              <span class="timeline-tag">Shopfloor Digitalization</span>
-              <span class="timeline-tag">Lean Planning</span>
-            </div>
           </div>
         </div>
 
-        <!-- 4. Research Assistant: OVGU / Volkswagen -->
-        <div class="timeline-item">
-          <div class="timeline-node"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <h3 class="timeline-role">Student Research Assistant (Robot Bin-Picking)</h3>
-              <span class="timeline-date">Apr 2023 – Nov 2023</span>
+        <!-- 4. Research Assistant: OVGU / Volkswagen AG -->
+        <div class="timeline-entry">
+          <div class="timeline-gear-pin"></div>
+          <div class="timeline-hud-card">
+            <div class="timeline-meta-bar">
+              <h3 class="timeline-job-title">Student Research Assistant (Robot Bin-Picking)</h3>
+              <span class="timeline-tenure">Apr 2023 – Nov 2023</span>
             </div>
-            <div class="timeline-company">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+            <div class="timeline-org">
               <span>Otto-von-Guericke-Universität Magdeburg</span>
             </div>
-            <p class="timeline-desc">
-              Research assistant at the Department of Factory Operations and Automation. Developed vision-guided Robot Bin-Picking algorithms and robotic arm path execution for deployment in the vehicle production line of <strong>Volkswagen AG</strong>.
+            <p class="timeline-description">
+              Department of Factory Operations and Automation. Developed vision-guided Robot Bin-Picking algorithms for 6-axis articulated arms to implement in the production line of <strong>Volkswagen AG</strong>.
             </p>
-            <div class="timeline-tag-list">
-              <span class="timeline-tag">Volkswagen AG</span>
-              <span class="timeline-tag">Industrial Robotics</span>
-              <span class="timeline-tag">Robot Bin Picking</span>
-              <span class="timeline-tag">Computer Vision</span>
-            </div>
           </div>
         </div>
 
-        <!-- 5. M.Sc. Degree -->
-        <div class="timeline-item">
-          <div class="timeline-node"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <h3 class="timeline-role">Master of Science — Systems Engineering for Manufacturing</h3>
-              <span class="timeline-date">Oct 2021 – May 2025</span>
+        <!-- 5. M.Sc. Systems Engineering -->
+        <div class="timeline-entry">
+          <div class="timeline-gear-pin"></div>
+          <div class="timeline-hud-card">
+            <div class="timeline-meta-bar">
+              <h3 class="timeline-job-title">Master of Science — Systems Engineering for Manufacturing</h3>
+              <span class="timeline-tenure">Oct 2021 – May 2025</span>
             </div>
-            <div class="timeline-company">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+            <div class="timeline-org">
               <span>Otto-von-Guericke-Universität Magdeburg, Germany</span>
             </div>
-            <p class="timeline-desc">
-              Rigorous advanced curriculum focusing on model-based systems engineering, production automation, cyber-physical systems, digital twin architectures, and international manufacturing standards.
+            <p class="timeline-description">
+              Advanced German master's curriculum focusing on cyber-physical production systems, MBSE, factory automation, robotics, and international manufacturing standards.
             </p>
-            <div class="timeline-tag-list">
-              <span class="timeline-tag">MBSE</span>
-              <span class="timeline-tag">Cyber-Physical Systems</span>
-              <span class="timeline-tag">Factory Automation</span>
-              <span class="timeline-tag">Magdeburg, Germany</span>
-            </div>
           </div>
         </div>
 
         <!-- 6. Product Development Engineer: 3D PrintzKart -->
-        <div class="timeline-item">
-          <div class="timeline-node"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <h3 class="timeline-role">Product Development Engineer</h3>
-              <span class="timeline-date">Jan 2021 – Jul 2021</span>
+        <div class="timeline-entry">
+          <div class="timeline-gear-pin"></div>
+          <div class="timeline-hud-card">
+            <div class="timeline-meta-bar">
+              <h3 class="timeline-job-title">Product Development Engineer</h3>
+              <span class="timeline-tenure">Jan 2021 – Jul 2021</span>
             </div>
-            <div class="timeline-company">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+            <div class="timeline-org">
               <span>3D PrintzKart</span>
             </div>
-            <p class="timeline-desc">
-              Product Development Engineer for an additive manufacturing startup. Managed end-to-end design, rapid prototyping, and structural testing of custom 3D-printed functional parts and hardware systems.
+            <p class="timeline-description">
+              Additive manufacturing startup R&D. Handled kinematic design, functional parts testing, and custom dual-extrusion 3D printing equipment design.
             </p>
-            <div class="timeline-tag-list">
-              <span class="timeline-tag">Additive Manufacturing</span>
-              <span class="timeline-tag">3D Printing</span>
-              <span class="timeline-tag">Rapid Prototyping</span>
-              <span class="timeline-tag">DFAM</span>
-            </div>
           </div>
         </div>
 
-        <!-- 7. Research Intern: KSCST -->
-        <div class="timeline-item">
-          <div class="timeline-node"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <h3 class="timeline-role">Research Assistant Intern</h3>
-              <span class="timeline-date">Jul 2019 – Aug 2019</span>
+        <!-- 7. Bachelor of Engineering: KSIT -->
+        <div class="timeline-entry">
+          <div class="timeline-gear-pin"></div>
+          <div class="timeline-hud-card">
+            <div class="timeline-meta-bar">
+              <h3 class="timeline-job-title">Bachelor of Engineering — Mechanical Engineering</h3>
+              <span class="timeline-tenure">2016 – 2020</span>
             </div>
-            <div class="timeline-company">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
-              <span>Karnataka State Council for Science and Technology (KSCST)</span>
-            </div>
-            <p class="timeline-desc">
-              Research assistant intern on the production and performance testing of bio-diesel derived from Used Cooking Oil as a sustainable alternative fuel source.
-            </p>
-            <div class="timeline-tag-list">
-              <span class="timeline-tag">Bio-diesel</span>
-              <span class="timeline-tag">Sustainability</span>
-              <span class="timeline-tag">Chemical Engineering</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- 8. Bachelor's Degree: KSIT -->
-        <div class="timeline-item">
-          <div class="timeline-node"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <h3 class="timeline-role">Bachelor of Engineering — Mechanical Engineering</h3>
-              <span class="timeline-date">2016 – 2020</span>
-            </div>
-            <div class="timeline-company">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+            <div class="timeline-org">
               <span>K.S. Institute of Technology, Bengaluru, India</span>
             </div>
-            <p class="timeline-desc">
-              Earned Bachelor's in Mechanical Engineering with high distinction. Active member of the Automotive Racing Club (BAJA SAE), designing and fabricating all-terrain vehicles.
+            <p class="timeline-description">
+              Bachelor's degree with active leadership in the Automotive Racing Club (BAJA SAE), heading roll-cage chassis design, ANSYS FEA impact analysis, and track testing.
             </p>
-            <div class="timeline-tag-list">
-              <span class="timeline-tag">Mechanical Engineering</span>
-              <span class="timeline-tag">BAJA SAE</span>
-              <span class="timeline-tag">Thermodynamics</span>
-              <span class="timeline-tag">Machine Design</span>
-            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Portfolio / Projects Gallery -->
-  <section id="portfolio" style="background: var(--bg-secondary);">
+  <!-- Contact & Telemetry Ping Section -->
+  <section id="contact" style="background: var(--bg-primary);">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Engineering Showcase</span>
-        <h2 class="section-title">Featured Projects & Systems</h2>
-        <p class="section-subtitle">Real-world applications in robotics, additive manufacturing systems, automotive racing, and industrial automation.</p>
+      <div class="section-hud-header">
+        <span class="hud-tag">Paddock Communications</span>
+        <h2 class="section-hud-title">Establish Transmission // Contact</h2>
+        <p class="section-hud-sub">Looking to discuss vehicle engineering, MBSE architectures, robotics automation, or prospective industrial collaborations? Send a transmission.</p>
       </div>
 
-      <!-- Filter Controls -->
-      <div class="filter-bar">
-        <button class="filter-btn active" data-filter="all">All Projects</button>
-        <button class="filter-btn" data-filter="robotics">Robotics & Automation</button>
-        <button class="filter-btn" data-filter="additive">Additive & 3D Printing</button>
-        <button class="filter-btn" data-filter="racing">Automotive & BAJA SAE</button>
-        <button class="filter-btn" data-filter="systems">Systems & Digital Twin</button>
-      </div>
+      <div class="engineering-deepdive-grid">
+        <!-- Direct Telemetry Info -->
+        <div class="deepdive-sidebar-card">
+          <h3 style="font-family:var(--font-race); font-size:1.4rem; text-transform:uppercase; margin-bottom:20px; color:var(--text-primary);">Paddock Telemetry</h3>
 
-      <!-- Projects Grid -->
-      <div class="projects-grid">
-        <!-- Project 1: Robot Bin Picking -->
-        <div class="project-card" data-category="robotics" data-lightbox data-lightbox-src="assets/images/project-robot-station.jpg" data-lightbox-caption="Robot Bin Picking for Volkswagen AG Production Line">
-          <div class="project-thumb-wrap">
-            <img src="assets/images/project-robot-station.jpg" alt="Robot Bin Picking Station" class="project-thumb">
-            <div class="project-overlay">
-              <span class="overlay-btn" title="View Fullscreen">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"></path></svg>
-              </span>
+          <div style="display:flex; flex-direction:column; gap:20px;">
+            <div>
+              <div style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted); text-transform:uppercase;">DIRECT EMAIL</div>
+              <div style="font-size:1.1rem; font-weight:700;"><a href="mailto:rpramod27@gmail.com" style="color:var(--telemetry-cyan);">rpramod27@gmail.com</a></div>
             </div>
-          </div>
-          <div class="project-body">
-            <span class="project-category">Robotics & Vision</span>
-            <h3 class="project-title">Volkswagen AG Robot Bin-Picking System</h3>
-            <p class="project-desc">
-              Integrated vision-guided robotic picking solution implemented for Volkswagen AG assembly lines to automate unstructured bin-picking of metallic chassis components.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Industrial Robotics</span>
-              <span class="project-tag">Computer Vision</span>
-              <span class="project-tag">Automation</span>
-              <span class="project-tag">Volkswagen AG</span>
-            </div>
-          </div>
-        </div>
 
-        <!-- Project 2: IDEX 3D Printer -->
-        <div class="project-card" data-category="additive" data-lightbox data-lightbox-src="assets/images/project-idex-3dprinter.png" data-lightbox-caption="Independent Dual Extruder (IDEX) 3D Printer Architecture">
-          <div class="project-thumb-wrap">
-            <img src="assets/images/project-idex-3dprinter.png" alt="IDEX 3D Printer CAD Model" class="project-thumb">
-            <div class="project-overlay">
-              <span class="overlay-btn" title="View Fullscreen">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"></path></svg>
-              </span>
+            <div>
+              <div style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted); text-transform:uppercase;">DIRECT TELEPHONE</div>
+              <div style="font-size:1.1rem; font-weight:700;"><a href="tel:+919742398505" style="color:var(--text-primary);">+91 9742398505</a></div>
             </div>
-          </div>
-          <div class="project-body">
-            <span class="project-category">Additive Manufacturing</span>
-            <h3 class="project-title">Independent Dual Extruder (IDEX) 3D Printer</h3>
-            <p class="project-desc">
-              Full kinematic CAD design and mechanical engineering of an IDEX 3D printing system supporting multi-material extrusion, soluble supports, and synchronous duplication modes.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">SolidWorks</span>
-              <span class="project-tag">IDEX Kinematics</span>
-              <span class="project-tag">DFM / DFAM</span>
-              <span class="project-tag">Mechatronics</span>
+
+            <div>
+              <div style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted); text-transform:uppercase;">LOCATION BASES</div>
+              <div style="font-size:1.05rem; font-weight:600; color:var(--text-secondary);">Bengaluru, India • Magdeburg, Germany</div>
             </div>
-          </div>
-        </div>
 
-        <!-- Project 3: BAJA SAE Racecar -->
-        <div class="project-card" data-category="racing" data-lightbox data-lightbox-src="assets/images/baja-racecar-1.jpg" data-lightbox-caption="Automotive Racing Club BAJA SAE All-Terrain Vehicle">
-          <div class="project-thumb-wrap">
-            <img src="assets/images/baja-racecar-1.jpg" alt="BAJA SAE All-Terrain Vehicle" class="project-thumb">
-            <div class="project-overlay">
-              <span class="overlay-btn" title="View Fullscreen">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"></path></svg>
-              </span>
-            </div>
-          </div>
-          <div class="project-body">
-            <span class="project-category">Automotive Engineering</span>
-            <h3 class="project-title">BAJA SAE All-Terrain Vehicle (2017–2020)</h3>
-            <p class="project-desc">
-              Led chassis design, roll-cage FEA, suspension geometry tuning, and manufacturing fabrication for the national BAJA SAE collegiate off-road endurance competitions.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Chassis FEA</span>
-              <span class="project-tag">Roll Cage Design</span>
-              <span class="project-tag">Suspension</span>
-              <span class="project-tag">SAE International</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 4: Automation Diagram / Digital Twin -->
-        <div class="project-card" data-category="systems" data-lightbox data-lightbox-src="assets/images/project-automation-diagram.png" data-lightbox-caption="Manufacturing Cell Digital Twin and Data Architecture">
-          <div class="project-thumb-wrap">
-            <img src="assets/images/project-automation-diagram.png" alt="Automation Architecture Diagram" class="project-thumb">
-            <div class="project-overlay">
-              <span class="overlay-btn" title="View Fullscreen">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"></path></svg>
-              </span>
-            </div>
-          </div>
-          <div class="project-body">
-            <span class="project-category">Systems Engineering & AAS</span>
-            <h3 class="project-title">Digital Plant Data Modeling (DIAMOND / KPDM)</h3>
-            <p class="project-desc">
-              Process-oriented digital factory modeling connecting neutral data formats, Asset Administration Shells (AAS), and execution pipelines for agile production reconfiguration.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">AutomationML</span>
-              <span class="project-tag">Asset Administration Shell</span>
-              <span class="project-tag">Industry 4.0</span>
-              <span class="project-tag">SysML</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 5: Functional Hardware Prototype -->
-        <div class="project-card" data-category="additive" data-lightbox data-lightbox-src="assets/images/project-hardware-prototype.jpeg" data-lightbox-caption="3D-Printed Functional Hardware Prototyping">
-          <div class="project-thumb-wrap">
-            <img src="assets/images/project-hardware-prototype.jpeg" alt="Hardware Prototype" class="project-thumb">
-            <div class="project-overlay">
-              <span class="overlay-btn" title="View Fullscreen">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"></path></svg>
-              </span>
-            </div>
-          </div>
-          <div class="project-body">
-            <span class="project-category">Additive Engineering</span>
-            <h3 class="project-title">Rapid Prototyping & Functional Testing</h3>
-            <p class="project-desc">
-              Design for Additive Manufacturing (DFAM) workflow to produce robust functional engineering prototypes, verifying dimensional tolerances and mechanical load properties.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">DFAM</span>
-              <span class="project-tag">Rapid Prototyping</span>
-              <span class="project-tag">Functional Testing</span>
-              <span class="project-tag">Additive R&D</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 6: BAJA Team in Action -->
-        <div class="project-card" data-category="racing" data-lightbox data-lightbox-src="assets/images/baja-team-3.jpg" data-lightbox-caption="BAJA Racing Team Workshop Assembly & Dynamic Testing">
-          <div class="project-thumb-wrap">
-            <img src="assets/images/baja-team-3.jpg" alt="BAJA Team Assembly" class="project-thumb">
-            <div class="project-overlay">
-              <span class="overlay-btn" title="View Fullscreen">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"></path></svg>
-              </span>
-            </div>
-          </div>
-          <div class="project-body">
-            <span class="project-category">Automotive Racing</span>
-            <h3 class="project-title">Automotive Racing Team & Fabrication</h3>
-            <p class="project-desc">
-              Hands-on fabrication, TIG/MIG welding, drivetrain assembly, braking system integration, and trackside telemetry debugging during national BAJA events.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Fabrication</span>
-              <span class="project-tag">Drivetrain</span>
-              <span class="project-tag">Team Leadership</span>
-              <span class="project-tag">BAJA SAE</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Paper Publications Section -->
-  <section id="publications">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Scientific Contributions</span>
-        <h2 class="section-title">Paper Publications & Research</h2>
-        <p class="section-subtitle">Peer-reviewed publications, academic research studies, and systems engineering thesis work.</p>
-      </div>
-
-      <div class="publications-grid">
-        <!-- Publication 1: JSON in Engineering -->
-        <div class="publication-card">
-          <div class="pub-preview-wrap" data-lightbox data-lightbox-src="assets/images/publication-1.png" data-lightbox-caption="Study on JSON, its Uses and Applications in Engineering Organizations">
-            <img src="assets/images/publication-1.png" alt="Study on JSON Publication" class="pub-preview">
-          </div>
-          <span class="pub-type-badge">Research Paper</span>
-          <h3 class="pub-title">Study on JSON, its Uses and Applications in Engineering Organizations</h3>
-          <p class="pub-authors">Ishita Garg, Nagarjuna Reddy Wudaru, Pramod Ramakrishna</p>
-          <p class="pub-desc">
-            Investigated data exchange formats in engineering firms with emphasis on JSON, interoperability standards, and cyber-physical systems for Industry 4.0 mechanical production environments.
-          </p>
-          <div class="timeline-tag-list">
-            <span class="timeline-tag">Industry 4.0</span>
-            <span class="timeline-tag">JSON Data Standards</span>
-            <span class="timeline-tag">Data Interoperability</span>
-          </div>
-        </div>
-
-        <!-- Publication 2: Careya arborea Polymer Composites -->
-        <div class="publication-card">
-          <div class="pub-preview-wrap" data-lightbox data-lightbox-src="assets/images/publication-2.png" data-lightbox-caption="Characterization of Careya arborea Roxb. Fibers for Sustainable Polymer Composites">
-            <img src="assets/images/publication-2.png" alt="Careya arborea Roxb. Paper" class="pub-preview">
-          </div>
-          <span class="pub-type-badge">Materials Science Paper</span>
-          <h3 class="pub-title">Characterization of Novel Careya arborea Roxb. Fibers as Reinforcement for Sustainable Polymer Composites</h3>
-          <p class="pub-authors">Materials & Sustainable Engineering Research</p>
-          <p class="pub-desc">
-            Comprehensive experimental study on natural fiber treatments (alkali, potassium permanganate, stearic acid) to optimize tensile strength and thermal stability for green structural composites.
-          </p>
-          <div class="timeline-tag-list">
-            <span class="timeline-tag">Composite Materials</span>
-            <span class="timeline-tag">Tensile Testing</span>
-            <span class="timeline-tag">Sustainability</span>
-          </div>
-        </div>
-
-        <!-- Publication 3: Master's Thesis Research -->
-        <div class="publication-card">
-          <div class="pub-preview-wrap" data-lightbox data-lightbox-src="assets/images/publication-3.png" data-lightbox-caption="Master's Thesis Research at Robert Bosch GmbH">
-            <img src="assets/images/publication-3.png" alt="Master's Thesis Research" class="pub-preview">
-          </div>
-          <span class="pub-type-badge">Master's Thesis Publication</span>
-          <h3 class="pub-title">Integration of SAP and MES Data-Streams to Efficiently Detect Scrap Costs</h3>
-          <p class="pub-authors">Pramod Ramakrishna • Robert Bosch GmbH & OVGU Magdeburg</p>
-          <p class="pub-desc">
-            Developed a systems engineering architecture linking real-time manufacturing execution systems (MES) with enterprise resource planning (SAP) for automated scrap root cause cost detection.
-          </p>
-          <div class="timeline-tag-list">
-            <span class="timeline-tag">Robert Bosch GmbH</span>
-            <span class="timeline-tag">SAP & MES</span>
-            <span class="timeline-tag">Systems Engineering</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Honors & Global Leadership (Berlin Embassy) -->
-  <section id="honors" style="background: var(--bg-secondary);">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Recognition & Leadership</span>
-        <h2 class="section-title">Diplomatic & Student Representation</h2>
-      </div>
-
-      <div class="honor-card">
-        <div class="honor-content">
-          <span class="honor-tag">Diplomatic Honors • Berlin, Germany</span>
-          <h3 class="honor-title">Student Body Representative at the Embassy of India, Berlin</h3>
-          <p class="honor-desc">
-            Selected to represent the international student body of Otto-von-Guericke-Universität Magdeburg at the Embassy of India in Berlin on the historic occasion of <strong>Republic Day 2022</strong>. Engaged in bilateral discussions on academic exchange, engineering research collaboration, and student community initiatives in Germany.
-          </p>
-          <div class="timeline-tag-list">
-            <span class="timeline-tag">Embassy of India, Berlin</span>
-            <span class="timeline-tag">Student Representative</span>
-            <span class="timeline-tag">Republic Day 2022</span>
-            <span class="timeline-tag">Leadership</span>
-          </div>
-        </div>
-        <div class="honor-img-wrap" data-lightbox data-lightbox-src="assets/images/berlin-embassy-republic-day.jpg" data-lightbox-caption="Pramod Ramakrishna representing Magdeburg at the Embassy of India in Berlin (Republic Day 2022)">
-          <img src="assets/images/berlin-embassy-republic-day.jpg" alt="Pramod at the Indian Embassy in Berlin" class="honor-img">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Hobbies & Interests Gallery -->
-  <section id="hobbies">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Beyond Engineering</span>
-        <h2 class="section-title">Life & Passions</h2>
-        <p class="section-subtitle">Classical Bansuri flute playing, nature exploration, architectural photography, and international travel.</p>
-      </div>
-
-      <div class="hobbies-gallery">
-        <div class="hobby-item" data-lightbox data-lightbox-src="assets/images/hobby-1.jpg" data-lightbox-caption="Classical Indian Bansuri / Flute playing and musical journey">
-          <img src="assets/images/hobby-1.jpg" alt="Flute & Music" class="hobby-img">
-          <div class="hobby-overlay"><span class="hobby-caption">Bansuri & Music</span></div>
-        </div>
-        <div class="hobby-item" data-lightbox data-lightbox-src="assets/images/hobby-2.jpg" data-lightbox-caption="Architectural and cultural travels across Europe">
-          <img src="assets/images/hobby-2.jpg" alt="European Travels" class="hobby-img">
-          <div class="hobby-overlay"><span class="hobby-caption">Cultural Journeys</span></div>
-        </div>
-        <div class="hobby-item" data-lightbox data-lightbox-src="assets/images/hobby-3.jpg" data-lightbox-caption="Scenic mountain landscapes and outdoor exploration">
-          <img src="assets/images/hobby-3.jpg" alt="Nature Trails" class="hobby-img">
-          <div class="hobby-overlay"><span class="hobby-caption">Nature & Hiking</span></div>
-        </div>
-        <div class="hobby-item" data-lightbox data-lightbox-src="assets/images/hobby-4.jpg" data-lightbox-caption="European city landmarks and heritage">
-          <img src="assets/images/hobby-4.jpg" alt="City Landmarks" class="hobby-img">
-          <div class="hobby-overlay"><span class="hobby-caption">Architecture</span></div>
-        </div>
-        <div class="hobby-item" data-lightbox data-lightbox-src="assets/images/hobby-5.jpg" data-lightbox-caption="Exploring natural wonders and lakes in Germany">
-          <img src="assets/images/hobby-5.jpg" alt="German Nature" class="hobby-img">
-          <div class="hobby-overlay"><span class="hobby-caption">Lake Serenity</span></div>
-        </div>
-        <div class="hobby-item" data-lightbox data-lightbox-src="assets/images/hobby-6.jpeg" data-lightbox-caption="Historical European castles and alpine adventures">
-          <img src="assets/images/hobby-6.jpeg" alt="Alpine Castle" class="hobby-img">
-          <div class="hobby-overlay"><span class="hobby-caption">Historical Castles</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact & Connect Section -->
-  <section id="contact" style="background: var(--bg-secondary);">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Let's Connect</span>
-        <h2 class="section-title">Get In Touch</h2>
-        <p class="section-subtitle">Whether you have an engineering opportunity, research inquiry, or would like to discuss a project, feel free to reach out.</p>
-      </div>
-
-      <div class="contact-grid">
-        <!-- Contact Info Details -->
-        <div class="contact-info-card">
-          <div class="contact-item">
-            <div class="contact-icon-wrap">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-            </div>
-            <div class="contact-details">
-              <h4>Email</h4>
-              <p><a href="mailto:rpramod27@gmail.com">rpramod27@gmail.com</a></p>
-            </div>
-          </div>
-
-          <div class="contact-item">
-            <div class="contact-icon-wrap">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-            </div>
-            <div class="contact-details">
-              <h4>Phone</h4>
-              <p><a href="tel:+919742398505">+91 9742398505</a></p>
-            </div>
-          </div>
-
-          <div class="contact-item">
-            <div class="contact-icon-wrap">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-            </div>
-            <div class="contact-details">
-              <h4>Location</h4>
-              <p>Bengaluru, India • Germany</p>
-            </div>
-          </div>
-
-          <div class="contact-item">
-            <div class="contact-icon-wrap">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-            </div>
-            <div class="contact-details">
-              <h4>Social & Networks</h4>
-              <div class="social-links">
-                <a href="https://www.linkedin.com/in/pramod-r8/" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn Profile">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                </a>
-                <a href="mailto:rpramod27@gmail.com" class="social-btn" title="Send Email">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                </a>
-                <a href="https://twitter.com/Flutemod27" target="_blank" rel="noopener noreferrer" class="social-btn" title="Twitter / X">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
-                </a>
-                <a href="https://www.facebook.com/PixelMaster123SaysHi" target="_blank" rel="noopener noreferrer" class="social-btn" title="Facebook">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
-                </a>
+            <div style="padding-top:16px; border-top:1px solid var(--border-color);">
+              <div style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted); text-transform:uppercase; margin-bottom:12px;">NETWORKS & REPOSITORIES</div>
+              <div style="display:flex; gap:10px;">
+                <a href="https://www.linkedin.com/in/pramod-r8/" target="_blank" rel="noopener noreferrer" class="btn-action-outline" style="padding:8px 14px; font-size:0.85rem;">LinkedIn</a>
+                <a href="https://github.com/PixelMaster-123/Portfolio" target="_blank" rel="noopener noreferrer" class="btn-action-outline" style="padding:8px 14px; font-size:0.85rem;">GitHub</a>
+                <a href="https://twitter.com/Flutemod27" target="_blank" rel="noopener noreferrer" class="btn-action-outline" style="padding:8px 14px; font-size:0.85rem;">Twitter / X</a>
               </div>
             </div>
           </div>
         </div>
 
         <!-- Contact Form -->
-        <div class="contact-form-card">
-          <form id="contact-form" class="contact-form">
-            <div class="form-group">
-              <label for="name">Your Name</label>
-              <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Alex Schmidt" required>
+        <div style="background:var(--bg-secondary); border:1px solid var(--border-color); border-radius:var(--radius-md); padding:32px; clip-path: polygon(0 0, 100% 0, 100% calc(100% - 16px), calc(100% - 16px) 100%, 0 100%);">
+          <form onsubmit="event.preventDefault(); window.location.href='mailto:rpramod27@gmail.com?subject=' + encodeURIComponent(document.getElementById('c-subj').value) + '&body=' + encodeURIComponent('From: ' + document.getElementById('c-name').value + ' (' + document.getElementById('c-mail').value + ')\n\n' + document.getElementById('c-msg').value);">
+            <div style="display:flex; flex-direction:column; gap:16px;">
+              <div>
+                <label style="font-family:var(--font-mono); font-size:0.78rem; text-transform:uppercase; color:var(--text-muted); display:block; margin-bottom:6px;">Your Name / Organization</label>
+                <input type="text" id="c-name" required placeholder="e.g. Alex Schmidt (Porsche / Bosch)" style="width:100%; padding:12px 14px; background:var(--bg-tertiary); border:1px solid var(--border-color); border-radius:var(--radius-sm); color:var(--text-primary); font-family:inherit;">
+              </div>
+
+              <div>
+                <label style="font-family:var(--font-mono); font-size:0.78rem; text-transform:uppercase; color:var(--text-muted); display:block; margin-bottom:6px;">Email Address</label>
+                <input type="email" id="c-mail" required placeholder="e.g. alex@engineering.com" style="width:100%; padding:12px 14px; background:var(--bg-tertiary); border:1px solid var(--border-color); border-radius:var(--radius-sm); color:var(--text-primary); font-family:inherit;">
+              </div>
+
+              <div>
+                <label style="font-family:var(--font-mono); font-size:0.78rem; text-transform:uppercase; color:var(--text-muted); display:block; margin-bottom:6px;">Subject</label>
+                <input type="text" id="c-subj" required placeholder="e.g. Systems Engineering Collaboration" style="width:100%; padding:12px 14px; background:var(--bg-tertiary); border:1px solid var(--border-color); border-radius:var(--radius-sm); color:var(--text-primary); font-family:inherit;">
+              </div>
+
+              <div>
+                <label style="font-family:var(--font-mono); font-size:0.78rem; text-transform:uppercase; color:var(--text-muted); display:block; margin-bottom:6px;">Message</label>
+                <textarea id="c-msg" required rows="4" placeholder="Hello Pramod, I'd like to discuss..." style="width:100%; padding:12px 14px; background:var(--bg-tertiary); border:1px solid var(--border-color); border-radius:var(--radius-sm); color:var(--text-primary); font-family:inherit;"></textarea>
+              </div>
+
+              <button type="submit" class="btn-action-primary" style="width:100%; justify-content:center; margin-top:10px;">
+                <span>Send Transmission</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
             </div>
-
-            <div class="form-group">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" class="form-input" placeholder="e.g. alex@company.com" required>
-            </div>
-
-            <div class="form-group">
-              <label for="subject">Subject</label>
-              <input type="text" id="subject" name="subject" class="form-input" placeholder="e.g. Systems Engineering Collaboration" required>
-            </div>
-
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" class="form-textarea" placeholder="Hello Pramod, I'd like to discuss..." required></textarea>
-            </div>
-
-            <div id="form-success" class="form-success-msg"></div>
-
-            <button type="submit" class="btn-primary" style="justify-content: center; width: 100%;">
-              <span>Send Message</span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-            </button>
           </form>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-copy">
-        <span>© 2026 Pramod Ramakrishna. All rights reserved.</span>
-      </div>
-      <div>
-        <a href="#hero" style="display:inline-flex; align-items:center; gap:6px; color:var(--accent-cyan); font-weight:600;">
-          <span>Back to Top</span>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
-        </a>
-      </div>
+  <!-- Paddock Footer -->
+  <footer style="padding:40px 0; border-top:1px solid var(--border-color); background:var(--bg-dark); font-family:var(--font-mono); font-size:0.82rem; color:var(--text-muted);">
+    <div class="container" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:14px;">
+      <div>© 2026 Pramod Ramakrishna // High-Octane Automotive & Systems Portfolio</div>
+      <a href="#hero" style="color:var(--racing-red); font-weight:700;">// RETURN TO TOP //</a>
     </div>
   </footer>
 
-  <!-- Lightbox Modal Component -->
-  <div id="lightbox-modal" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Image Preview">
-    <div class="lightbox-content">
-      <button id="lightbox-close" class="lightbox-close" aria-label="Close image preview">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-      </button>
-      <img id="lightbox-img" src="" alt="Enlarged view" class="lightbox-img">
-      <p id="lightbox-caption" class="lightbox-caption"></p>
-    </div>
-  </div>
-
-  <!-- Scripts -->
   <script src="assets/js/main.js"></script>
 </body>
 </html>

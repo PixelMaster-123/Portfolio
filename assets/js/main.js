@@ -1,108 +1,182 @@
 /**
- * Pramod Ramakrishna — Portfolio Main Script
- * Handles Theme Toggling, Filterable Projects, Lightbox, Navigation, and Form Interactions
+ * PRAMOD RAMAKRISHNA — HIGH-OCTANE AUTOMOTIVE & SYSTEMS PORTFOLIO
+ * Main Interactive HUD Script: Tachometer rev simulation, Drive Modes, Web Audio FX, & Filters
  */
 
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   initNavigation();
+  initTachometer();
+  initDriveModes();
   initProjectFilters();
-  initLightbox();
-  initContactForm();
-  initCopyEmail();
+  initAudioHUD();
 });
 
 /* ==========================================================================
-   Theme Toggle (Dark / Light)
+   Web Audio API Synthesizer (Zero External Audio Files Needed)
    ========================================================================== */
-function initTheme() {
-  const themeToggle = document.getElementById('theme-toggle');
-  const storedTheme = localStorage.getItem('pramod_theme');
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  
-  const currentTheme = storedTheme || (prefersDark ? 'dark' : 'light');
-  document.documentElement.setAttribute('data-theme', currentTheme);
-  updateThemeIcon(currentTheme);
+let audioCtx = null;
+let soundEnabled = false;
 
-  if (themeToggle) {
-    themeToggle.addEventListener('click', () => {
-      const activeTheme = document.documentElement.getAttribute('data-theme');
-      const newTheme = activeTheme === 'dark' ? 'light' : 'dark';
-      document.documentElement.setAttribute('data-theme', newTheme);
-      localStorage.setItem('pramod_theme', newTheme);
-      updateThemeIcon(newTheme);
-    });
+function getAudioContext() {
+  if (!audioCtx) {
+    const AudioContext = window.AudioContext || window.webkitAudioContext;
+    if (AudioContext) audioCtx = new AudioContext();
   }
+  if (audioCtx && audioCtx.state === 'suspended') {
+    audioCtx.resume();
+  }
+  return audioCtx;
 }
 
-function updateThemeIcon(theme) {
-  const toggleBtn = document.getElementById('theme-toggle');
-  if (!toggleBtn) return;
-  
-  if (theme === 'dark') {
-    toggleBtn.innerHTML = `
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="12" cy="12" r="5"></circle>
-        <line x1="12" y1="1" x2="12" y2="3"></line>
-        <line x1="12" y1="21" x2="12" y2="23"></line>
-        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-        <line x1="1" y1="12" x2="3" y2="12"></line>
-        <line x1="21" y1="12" x2="23" y2="12"></line>
-        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-      </svg>
-    `;
-    toggleBtn.setAttribute('aria-label', 'Switch to Light Mode');
-  } else {
-    toggleBtn.innerHTML = `
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-      </svg>
-    `;
-    toggleBtn.setAttribute('aria-label', 'Switch to Dark Mode');
-  }
+function playClickSound() {
+  if (!soundEnabled) return;
+  try {
+    const ctx = getAudioContext();
+    if (!ctx) return;
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.type = 'triangle';
+    osc.frequency.setValueAtTime(800, ctx.currentTime);
+    osc.frequency.exponentialRampToValueAtTime(200, ctx.currentTime + 0.05);
+    gain.gain.setValueAtTime(0.12, ctx.currentTime);
+    gain.gain.linearRampToValueAtTime(0.01, ctx.currentTime + 0.05);
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+    osc.start();
+    osc.stop(ctx.currentTime + 0.05);
+  } catch (e) {}
+}
+
+function playRevSound() {
+  if (!soundEnabled) return;
+  try {
+    const ctx = getAudioContext();
+    if (!ctx) return;
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.type = 'sawtooth';
+    // Engine RPM sweep simulation
+    osc.frequency.setValueAtTime(120, ctx.currentTime);
+    osc.frequency.exponentialRampToValueAtTime(480, ctx.currentTime + 0.35);
+    osc.frequency.exponentialRampToValueAtTime(140, ctx.currentTime + 0.7);
+    gain.gain.setValueAtTime(0.08, ctx.currentTime);
+    gain.gain.linearRampToValueAtTime(0.18, ctx.currentTime + 0.35);
+    gain.gain.linearRampToValueAtTime(0.01, ctx.currentTime + 0.7);
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+    osc.start();
+    osc.stop(ctx.currentTime + 0.7);
+  } catch (e) {}
+}
+
+function initAudioHUD() {
+  const soundBtn = document.getElementById('sound-toggle-btn');
+  if (!soundBtn) return;
+
+  soundBtn.addEventListener('click', () => {
+    soundEnabled = !soundEnabled;
+    if (soundEnabled) {
+      getAudioContext();
+      soundBtn.classList.add('active');
+      soundBtn.innerHTML = `
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+        <span>AUDIO: ON</span>
+      `;
+      playClickSound();
+    } else {
+      soundBtn.classList.remove('active');
+      soundBtn.innerHTML = `
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+        <span>AUDIO: MUTED</span>
+      `;
+    }
+  });
+
+  // Attach mechanical clicks to buttons
+  document.querySelectorAll('button, .mode-btn, .filter-btn, .motorsport-card').forEach(el => {
+    el.addEventListener('mouseenter', () => playClickSound());
+  });
 }
 
 /* ==========================================================================
-   Navigation & Scroll Spy
+   Tachometer RPM & Shift Lights Simulation
    ========================================================================== */
-function initNavigation() {
-  const mobileToggle = document.getElementById('mobile-toggle');
-  const navLinks = document.getElementById('nav-links');
-  const navItems = document.querySelectorAll('.nav-links a');
-  const sections = document.querySelectorAll('section[id]');
+function initTachometer() {
+  const tachVal = document.getElementById('tach-value');
+  const tachWidget = document.getElementById('tachometer-widget');
+  const leds = document.querySelectorAll('.tach-led');
+  if (!tachVal || !tachWidget) return;
 
-  if (mobileToggle && navLinks) {
-    mobileToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
+  let currentRPM = 1200;
+  let targetRPM = 1200;
+  let isRevving = false;
 
-    navItems.forEach(item => {
-      item.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-      });
+  function updateShiftLights(rpm) {
+    const totalLeds = leds.length;
+    const activeCount = Math.floor(((rpm - 1000) / 7500) * totalLeds);
+    leds.forEach((led, idx) => {
+      if (idx <= activeCount) {
+        led.classList.add('on');
+      } else {
+        led.classList.remove('on');
+      }
     });
   }
 
-  // Active section indicator on scroll
-  window.addEventListener('scroll', () => {
-    let current = '';
-    const scrollPos = window.scrollY + 100;
+  function renderTach() {
+    currentRPM += (targetRPM - currentRPM) * 0.15;
+    tachVal.textContent = Math.round(currentRPM).toLocaleString();
+    updateShiftLights(currentRPM);
 
-    sections.forEach(sec => {
-      const top = sec.offsetTop;
-      const height = sec.offsetHeight;
-      if (scrollPos >= top && scrollPos < top + height) {
-        current = sec.getAttribute('id');
-      }
-    });
+    // Subtle needle idle fluctuation
+    if (!isRevving && Math.abs(currentRPM - targetRPM) < 50) {
+      targetRPM = 1150 + Math.random() * 100;
+    }
+    requestAnimationFrame(renderTach);
+  }
+  renderTach();
 
-    navItems.forEach(a => {
-      a.classList.remove('active');
-      if (a.getAttribute('href') === `#${current}`) {
-        a.classList.add('active');
-      }
+  tachWidget.addEventListener('mouseenter', () => {
+    isRevving = true;
+    targetRPM = 7800 + Math.random() * 800;
+    playRevSound();
+  });
+
+  tachWidget.addEventListener('mouseleave', () => {
+    isRevving = false;
+    targetRPM = 1200;
+  });
+
+  tachWidget.addEventListener('click', () => {
+    targetRPM = 8600;
+    playRevSound();
+    setTimeout(() => {
+      if (!tachWidget.matches(':hover')) targetRPM = 1200;
+    }, 450);
+  });
+}
+
+/* ==========================================================================
+   Drive Mode Switching
+   ========================================================================== */
+function initDriveModes() {
+  const modeBtns = document.querySelectorAll('.mode-btn');
+  const filterBtns = document.querySelectorAll('.filter-btn');
+
+  modeBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      modeBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      playClickSound();
+
+      const mode = btn.getAttribute('data-mode');
+      // Sync with project filters
+      filterBtns.forEach(f => {
+        if (f.getAttribute('data-filter') === mode) {
+          f.click();
+        }
+      });
     });
   });
 }
@@ -112,29 +186,28 @@ function initNavigation() {
    ========================================================================== */
 function initProjectFilters() {
   const filterBtns = document.querySelectorAll('.filter-btn');
-  const projectCards = document.querySelectorAll('.project-card');
+  const projectCards = document.querySelectorAll('.motorsport-card');
 
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       filterBtns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
+      playClickSound();
 
       const filter = btn.getAttribute('data-filter');
 
       projectCards.forEach(card => {
-        const category = card.getAttribute('data-category');
-        if (filter === 'all' || category.includes(filter)) {
+        const cat = card.getAttribute('data-category') || '';
+        if (filter === 'all' || cat.includes(filter)) {
           card.style.display = 'flex';
-          setTimeout(() => {
-            card.style.opacity = '1';
-            card.style.transform = 'scale(1)';
-          }, 50);
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0)';
         } else {
           card.style.opacity = '0';
-          card.style.transform = 'scale(0.95)';
+          card.style.transform = 'scale(0.96)';
           setTimeout(() => {
-            card.style.display = 'none';
-          }, 200);
+            if (card.style.opacity === '0') card.style.display = 'none';
+          }, 180);
         }
       });
     });
@@ -142,108 +215,35 @@ function initProjectFilters() {
 }
 
 /* ==========================================================================
-   Lightbox Modal
+   Theme Toggling
    ========================================================================== */
-function initLightbox() {
-  const lightbox = document.getElementById('lightbox-modal');
-  const lightboxImg = document.getElementById('lightbox-img');
-  const lightboxCaption = document.getElementById('lightbox-caption');
-  const closeBtn = document.getElementById('lightbox-close');
+function initTheme() {
+  const themeToggle = document.getElementById('theme-toggle');
+  const storedTheme = localStorage.getItem('pramod_theme') || 'dark';
+  document.documentElement.setAttribute('data-theme', storedTheme);
 
-  if (!lightbox) return;
-
-  // Open modal on image click
-  document.querySelectorAll('[data-lightbox]').forEach(el => {
-    el.addEventListener('click', (e) => {
-      e.preventDefault();
-      const imgSrc = el.getAttribute('data-lightbox-src') || el.querySelector('img')?.src || el.src;
-      const caption = el.getAttribute('data-lightbox-caption') || el.querySelector('img')?.alt || el.alt || '';
-
-      if (imgSrc) {
-        lightboxImg.src = imgSrc;
-        lightboxCaption.textContent = caption;
-        lightbox.classList.add('active');
-        document.body.style.overflow = 'hidden';
-      }
-    });
-  });
-
-  // Close modal
-  const closeModal = () => {
-    lightbox.classList.remove('active');
-    document.body.style.overflow = '';
-  };
-
-  if (closeBtn) closeBtn.addEventListener('click', closeModal);
-  lightbox.addEventListener('click', (e) => {
-    if (e.target === lightbox) closeModal();
-  });
-
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && lightbox.classList.contains('active')) {
-      closeModal();
-    }
-  });
-}
-
-/* ==========================================================================
-   Contact Form Handling
-   ========================================================================== */
-function initContactForm() {
-  const form = document.getElementById('contact-form');
-  const successMsg = document.getElementById('form-success');
-
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      
-      const name = document.getElementById('name')?.value || '';
-      const email = document.getElementById('email')?.value || '';
-      const subject = document.getElementById('subject')?.value || 'Portfolio Contact Inquiry';
-      const message = document.getElementById('message')?.value || '';
-
-      // Direct mailto link fallback
-      const mailtoLink = `mailto:rpramod27@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent("From: " + name + " (" + email + ")\n\n" + message)}`;
-      
-      if (successMsg) {
-        successMsg.style.display = 'block';
-        successMsg.textContent = 'Opening your email client to send message directly to Pramod...';
-      }
-
-      setTimeout(() => {
-        window.location.href = mailtoLink;
-      }, 600);
-
-      form.reset();
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const active = document.documentElement.getAttribute('data-theme');
+      const next = active === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('pramod_theme', next);
+      playClickSound();
     });
   }
 }
 
 /* ==========================================================================
-   Copy Email to Clipboard
+   Navigation
    ========================================================================== */
-function initCopyEmail() {
-  const copyBtn = document.getElementById('copy-email-btn');
-  if (!copyBtn) return;
+function initNavigation() {
+  const mobileToggle = document.getElementById('mobile-toggle');
+  const navLinks = document.getElementById('nav-links');
 
-  copyBtn.addEventListener('click', async () => {
-    try {
-      await navigator.clipboard.writeText('rpramod27@gmail.com');
-      const origText = copyBtn.innerHTML;
-      copyBtn.innerHTML = `
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-        Copied!
-      `;
-      copyBtn.style.background = 'var(--accent-emerald)';
-      copyBtn.style.color = '#ffffff';
-
-      setTimeout(() => {
-        copyBtn.innerHTML = origText;
-        copyBtn.style.background = '';
-        copyBtn.style.color = '';
-      }, 2500);
-    } catch (err) {
-      console.warn('Clipboard write failed:', err);
-    }
-  });
+  if (mobileToggle && navLinks) {
+    mobileToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      playClickSound();
+    });
+  }
 }
